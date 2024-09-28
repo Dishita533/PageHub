@@ -1,0 +1,104 @@
+/* book-finder.component.scss */
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+mat-card {
+  background-color: rgb(243, 237, 237);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+/* .card-content-background {
+  
+  background-color: #f09898;
+} */
+
+mat-card-header {
+  background-color: #cc6b41;
+  color: white;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px 8px 0 0;
+}
+
+mat-card-title {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  margin-right: 12px;
+}
+
+mat-card-content {
+  padding: 0 24px 24px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}
+
+.lexile-range {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  mat-form-field {
+    flex: 1;
+  }
+}
+.book-type {
+  margin-bottom: 16px; /* Spacing below the Book Type section */
+}
+
+.book-type mat-label {
+  display: block; /* Make the label a block element */
+  margin-bottom: 8px; /* Space between the label and radio buttons */
+}
+
+/* .book-type {
+  margin-bottom: 20px;
+
+  mat-radio-button {
+    margin-right: 16px;
+  }
+} */
+
+.categories {
+  margin-bottom: 20px;
+  
+}
+
+.file-input {
+  margin-bottom: 24px;
+
+  button {
+    margin-right: 12px;
+  }
+
+  span {
+    font-size: 14px;
+    color: #666;
+  }
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
