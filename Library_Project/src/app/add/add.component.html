@@ -1,0 +1,83 @@
+<!-- book-finder.component.html -->
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>menu_book</mat-icon>
+      Library
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content  class="card-content-background">
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" placeholder="Title">
+        <mat-error *ngIf="bookForm.get('title')?.hasError('required')">
+          Title is required.
+        </mat-error>
+        <!-- <mat-icon matSuffix>title</mat-icon> -->
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Author</mat-label>
+        <input matInput formControlName="author" placeholder="e.g., Tui T. Sutherland">
+        <mat-error *ngIf="bookForm.get('author')?.hasError('required')">
+          Author is required.
+        </mat-error>
+        <!-- <mat-icon matSuffix>person</mat-icon> -->
+      </mat-form-field>
+
+      
+
+      <!-- <div class="lexile-range">
+        <mat-form-field appearance="outline">
+          <mat-label>Lexile Min</mat-label>
+          <input matInput type="number" formControlName="lexileMin" min="-650" max="2150">
+        </mat-form-field>
+        <span>to</span>
+        <mat-form-field appearance="outline">
+          <mat-label>Lexile Max</mat-label>
+          <input matInput type="number" formControlName="lexileMax" min="-650" max="2150">
+        </mat-form-field>
+      </div> -->
+
+      <div class="book-type">
+        <mat-label style="font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; color: #cc6b41;">Book Type</mat-label>
+        <mat-radio-group formControlName="bookType">
+          <mat-radio-button value="fiction">Fiction</mat-radio-button>
+          <mat-radio-button value="nonfiction">Nonfiction</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+     
+      <mat-selection-list formControlName="categories">
+        <mat-label style="font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; color: #cc6b41;">
+          Categories
+        </mat-label>
+        
+          <mat-list-option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+          </mat-list-option>
+        </mat-selection-list>
+        <!-- <mat-form-field appearance="fill">
+          <mat-label>Categories</mat-label>
+          <mat-select formControlName="categories" multiple>
+            <mat-option *ngFor="let category of categories" [value]="category">
+              {{ category }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field> -->
+    
+
+      <div class="file-input">
+        <button mat-raised-button style="background-color: #fff; color: #cc6b41;" (click)="fileInput.click()">
+          <mat-icon>add_photo_alternate</mat-icon>
+          Add Book Image
+        </button>
+        <input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file" accept="image/*">
+        <span *ngIf="selectedFile">{{selectedFile.name}}</span>
+      </div>
+
+      <button mat-raised-button style="background-color: #fff; color: #cc6b41;" type="submit">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>
