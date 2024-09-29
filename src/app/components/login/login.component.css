@@ -1,0 +1,91 @@
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 101vh;
+  width: 100vw;
+  background-color: bisque;
+}
+
+/* Welcome text container */
+.overlay-text {
+  text-align: center;
+  background-color: cadetblue; /* Add background color with transparency */
+  padding: 15px 30px; /* Padding for better spacing */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Welcome text styling */
+h2 {
+  font-size: 28px;
+  color: white; /* Text color */
+  margin: 0; /* Remove default margin */
+  font-weight: bold;
+}
+
+/* Wrapper for the image and form sides */
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Image side styling */
+.image-side {
+  flex: 1;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form side styling */
+.form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:burlywood;
+}
+
+/* Styling for p-card */
+p-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: aliceblue;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  background-color: #007bff !important;
+  color:aqua;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3 !important;
+}

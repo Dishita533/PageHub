@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "fullName": "test user",
+      "email": "test1@gmail.com",
+      "password": "1234",
+      "id": "1"
+    },
+    {
+      "fullName": "test Data",
+      "email": "test@gmail.com",
+      "password": "1234",
+      "id": "2"
+    },
+    {
+      "id": "4d9c",
+      "fullName": "ad",
+      "email": "ad@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "a02f",
+      "fullName": "dfef",
+      "email": "df@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "2cd0",
+      "fullName": "csaca",
+      "email": "dineshnehraedu@gmail.com",
+      "phone": "7240628993",
+      "password": "123"
+    },
+    {
+      "id": "41ef",
+      "fullName": "assd",
+      "email": "asasd@gmail.com",
+      "phone": "7554745756",
+      "password": "12312"
+    },
+    {
+      "id": "7780",
+      "fullName": "Dinesh Nehra",
+      "email": "dinesh@gmail.com",
+      "phone": "7240628993",
+      "password": "123"
+    },
+    {
+      "id": "5103",
+      "fullName": "Dinesh Nehra",
+      "email": "dinesh@gmail.com",
+      "phone": "7240628993",
+      "password": "12345"
+    },
+    {
+      "id": "8158",
+      "fullName": "sdsd",
+      "email": "s@gmail.com",
+      "phone": "1234567890",
+      "password": "12"
+    },
+    {
+      "id": "0f05",
+      "fullName": "sdasd",
+      "email": "dasd@gmail.com",
+      "phone": "1234567890",
+      "password": "123"
+    },
+    {
+      "id": "ec31",
+      "fullName": "qwew",
+      "email": "dii@gmil.com",
+      "phone": "1478523695",
+      "password": "11"
+    },
+    {
+      "id": "4b58",
+      "fullName": "aabb",
+      "email": "aabb@gmail.com",
+      "phone": "1234567890",
+      "password": "1234"
+    },
+    {
+      "id": "665a",
+      "fullName": "Jai Shree Ganesh",
+      "email": "ganesh@gmail.com",
+      "phone": "1234567890",
+      "password": "12345"
+    },
+    {
+      "id": "4a30",
+      "fullName": "Ram",
+      "email": "ram@gmail.com",
+      "phone": "1234567890",
+      "password": "123"
+    },
+    {
+      "id": "d671",
+      "fullName": "dinesh",
+      "email": "sfsd@gmail.com",
+      "phone": "1234567890",
+      "password": "123"
+    },
+    {
+      "id": "4758",
+      "fullName": "sdo",
+      "email": "sdo@gmail.com",
+      "phone": "4578967845",
+      "password": "456"
+    }
+  ],
+  "books": [
+    {
+      "title": "Marley & Me",
+      "author": "John Grogan",
+      "genre": "Animals, Bugs & Pets",
+      "imageUrl": "https://media.themoviedb.org/t/p/w220_and_h330_face/pnB6hjTKylb0Ve2nUWt16gzkErr.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Charlotte's Web",
+      "author": "E.B. White",
+      "genre": "Animals, Bugs & Pets",
+      "imageUrl": "https://m.media-amazon.com/images/I/51xJY2VxGTL._SY445_SX342_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "The War of Art",
+      "author": "Steven Pressfield",
+      "genre": "Art, Creativity & Music",
+      "imageUrl": "https://m.media-amazon.com/images/I/41ET8OFVFCL._SY445_SX342_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "Just Kids",
+      "author": "Patti Smith",
+      "genre": "Art, Creativity & Music",
+      "imageUrl": "https://m.media-amazon.com/images/I/41nnDk5lxrL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "General Literature",
+      "imageUrl": "https://m.media-amazon.com/images/I/81QodR8r+DL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "General Literature",
+      "imageUrl":"https://m.media-amazon.com/images/I/A11qhnu9PwL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Into the Wild",
+      "author": "Jon Krakauer",
+      "genre": "Hobbies, Sports & Outdoors",
+      "imageUrl": "https://m.media-amazon.com/images/I/81QNzLOhtiL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "Born to Run",
+      "author": "Christopher McDougall",
+      "genre": "Hobbies, Sports & Outdoors",
+      "imageUrl": "https://m.media-amazon.com/images/I/81CxvRb9peL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Science Fiction & Fantasy",
+      "imageUrl": "https://m.media-amazon.com/images/I/81mCE+uclxL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Neuromancer",
+      "author": "William Gibson",
+      "genre": "Science Fiction & Fantasy",
+      "imageUrl": "https://m.media-amazon.com/images/I/91bDykN6bxL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Educated",
+      "author": "Tara Westover",
+      "genre": "Real Life",
+      "imageUrl": "https://m.media-amazon.com/images/I/81HIvR1FmWL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "The Glass Castle",
+      "author": "Jeannette Walls",
+      "genre": "Real Life",
+      "imageUrl": "https://m.media-amazon.com/images/I/91c6cM0D1NL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genre": "Science & Technology",
+      "imageUrl": "https://m.media-amazon.com/images/I/713jIoMO3UL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "The Innovators",
+      "author": "Walter Isaacson",
+      "genre": "Science & Technology",
+      "imageUrl": "https://m.media-amazon.com/images/I/81kT7QAMjfL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "genre": "Mystery & Suspense",
+      "imageUrl": "https://m.media-amazon.com/images/I/81YW99XIpJL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "Big Little Lies",
+      "author": "Liane Moriarty",
+      "genre": "Mystery & Suspense",
+      "imageUrl": "https://m.media-amazon.com/images/I/91tRynIEiIL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Fiction"
+    },
+    {
+      "title": "The Elements of Style",
+      "author": "William Strunk Jr. and E.B. White",
+      "genre": "Reference",
+      "imageUrl": "https://m.media-amazon.com/images/I/81vd-qXaqfL._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "genre": "Reference",
+      "imageUrl": "https://m.media-amazon.com/images/I/71jlqp6Jq4L._AC_UY218_.jpg",
+      "isFavorite": false,
+      "bookType": "Non-Fiction"
+    }
+  ]
+}
+
