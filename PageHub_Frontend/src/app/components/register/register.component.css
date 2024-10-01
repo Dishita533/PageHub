@@ -4,7 +4,7 @@
 /* Main container for the registration page */
 .register-container {
   display: flex;
-  height: 100vh;
+  height: 50%;
   width: 100%; /* Increased width for the container */
   margin: auto; /* Centers the container horizontally */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the overall page */
@@ -18,11 +18,12 @@
 /* Left side with the image */
 .left-side {
   flex: 1;
+  object-fit: cover;
   /* background-image: url('assets\images\libraryy.jpg');  */
-  background-size:cover;
+  background-size:contain;
   background-position: center;
   position: relative;
-  border-radius: 10px 0 0 10px; /* Rounded corners on the left side */
+  border-radius:1%; /* Rounded corners on the left side */
   overflow:hidden; /* Ensures the image is clipped */
 }
 
@@ -75,8 +76,9 @@
 }
 
 .title{
-  color:#9058e3;
+  color:black;
   text-align: center;
+  justify-content: center;
   font-family: 'Times New Roman', Times, serif;
   font-size:25px;
   font-weight: bold;

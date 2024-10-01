@@ -4,14 +4,31 @@
   background-attachment: fixed;
   min-height: 100vh;
   padding: 20px;
+ 
 }
 
 .header {
+  display: flex;
+  justify-content: space-between; 
   font-family: "Allura", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
+  background-color: rgb(177, 168, 168);
 }
+.view-button {
+  margin-right: 20px;
+  color: white; /* Button text color */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.view-button:hover {
+  background-color: #303f9f; /* Darker shade on hover */
+}
+
 .controls-container {
   display: flex;
   justify-content: space-between;
@@ -80,9 +97,7 @@ mat-card-subtitle {
   margin-top: 4px;
 }
 
-.header {
-  position: relative;
-}
+
 
 .title-container {
   display: flex;

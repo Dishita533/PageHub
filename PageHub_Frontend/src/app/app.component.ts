@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ToastModule,LoginComponent,RegisterComponent,HomeComponent,NavbarComponent,FooterComponent,RouterModule],
+  imports: [RouterOutlet,ToastModule,LoginComponent,RegisterComponent,HomeComponent,NavbarComponent,FooterComponent,ViewComponent,FavoriteComponent,RouterModule],
   templateUrl: './app.component.html',
   providers: [MessageService],
   styleUrl: './app.component.css'

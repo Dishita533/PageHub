@@ -19,6 +19,9 @@ body, html {
   color: white;
 }
 
+.auth-button{
+  margin-left: 10px;
+}
 .app-name {
   font-size: 24px;
   font-weight: bold;
