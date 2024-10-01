@@ -1,0 +1,74 @@
+<div class="container">
+  <!-- Welcome text above the form -->
+  <div class="overlay-text">
+    <h2>Welcome to Our PageHub</h2>
+  </div>
+
+  <div class="content-wrapper">
+    <!-- Image side -->
+    <div class="image-side">
+      <img src="assets/images/75f27d27-bf7a-403c-95d5-da49a8623559.jpg" alt="Background Image">
+    </div>
+
+    <!-- Form side -->
+    <div class="form-side">
+      <div class="background-card"> <!-- Background card container -->
+        <form [formGroup]="loginForm" (ngSubmit)="loginUser()" class="login-form">
+          <p-card header="Login" [style]="{ width: '460px' }" class="login-card">
+            <div class="field">
+              <mat-form-field class="w-full" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input
+                  matInput
+                  formControlName="email"
+                  type="email"
+                  placeholder="Type your email"
+                />
+                <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+                  <div *ngIf="email.errors?.['required']">Email is required.</div>
+                  <div *ngIf="email.errors?.['email']">Email should be valid.</div>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="field">
+              <mat-form-field class="w-full" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input
+                  matInput
+                  formControlName="password"
+                  type="password"
+                  placeholder="Type your password"
+                />
+                <mat-error *ngIf="password.invalid && (password.dirty || password.touched)">
+                  <div *ngIf="password.errors?.['required']">Password is required.</div>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <!-- Forgot Password Link below password field -->
+            <div class="forgot-password-container">
+              <a routerLink="/forget-password" class="forgot-password-link">Forgot Password?</a>
+            </div>
+
+            <!-- Sign In button -->
+            <button
+              mat-raised-button
+              color="primary"
+              class="login-button"
+              [disabled]="loginForm.invalid"
+              type="submit"
+            >
+              SIGN IN
+            </button>
+
+            <!-- Spacing between button and links -->
+            <div class="spacer"></div>
+
+            <div class="mt-2">Not a member? <a routerLink="/register">Register</a></div>
+          </p-card>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

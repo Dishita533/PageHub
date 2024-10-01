@@ -1,0 +1,168 @@
+
+
+
+/* Main container for the registration page */
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100%; /* Increased width for the container */
+  margin: auto; /* Centers the container horizontally */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for the overall page */
+  position: relative; /* Ensure children can use absolute positioning */
+  z-index: 1; /* Ensure this is above the background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Left side with the image */
+.left-side {
+  flex: 1;
+  /* background-image: url('assets\images\libraryy.jpg');  */
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px 0 0 10px; /* Rounded corners on the left side */
+  overflow:hidden; /* Ensures the image is clipped */
+}
+
+/* Text overlay on the left image */
+.overlay-text {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  color: white;
+  max-width: 300px;
+  background:cadetblue; /* Dark background for text readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.overlay-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Right side with the form */
+.right-side {
+  flex: 1;
+  /* background-image: url('assets\images\libraryy.jpg'); */
+  display: flex;
+  background-color:burlywood;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+  padding: 40px;
+}
+
+/* Form card styling */
+.register-card {
+  width: 100%;
+  max-width: 800px; /* Increased width of the form card */
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(207, 8, 8, 0.15); /* Softer shadow for the card */
+  padding: 20px;
+  color: rgb(193, 114, 18);
+  background-color:rgba(9, 47, 55, 0.1);
+  text-align: center;
+}
+
+.title{
+  color:#9058e3;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:25px;
+  font-weight: bold;
+}
+
+/* Form input field styling */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 0px; /* Consistent spacing between form fields */
+}
+
+mat-form-field input {
+  padding: 1px; /* Add padding for better input field appearance */
+}
+
+mat-form-field.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  border-color: #6200ea; /* Primary color for the form field outline */
+}
+
+/* Register button styling */
+button.mat-raised-button {
+  background-color: #6200ea; /* Primary color */
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.mat-raised-button:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+/* Styling for error messages */
+mat-error {
+  font-size: 13px;
+  color: #e53935;
+  margin-top: 4px;
+}
+
+/* Login link styling */
+.mt-2 {
+  margin-top: 24px;
+  font-size: 20px;
+  text-align: center;
+  color: #6b7280; /* Soft gray for text */
+}
+
+.mt-2 a {
+  color: darkblue; /* Match button color */
+  text-decoration: bold;
+}
+
+.mt-2 a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .register-container {
+    width: 90%; /* Adjust container width on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column; /* Stack the image and form vertically */
+    width: 95%;
+  }
+
+  .left-side {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .right-side {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-card {
+    box-shadow: none; /* Remove shadow for simplicity on mobile */
+    padding: 20px;
+  }
+}

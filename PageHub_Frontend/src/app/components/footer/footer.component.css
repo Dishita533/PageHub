@@ -1,0 +1,93 @@
+/* Footer Styling */
+footer {
+    background-color: maroon;
+    color: white;
+    padding: 30px 0;
+    text-align: center; /* Center text globally */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+  }
+  
+  /* Footer columns styling */
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info, .social-links, .hours {
+    padding: 10px;
+    flex: 1;
+    min-width: 250px; /* Ensures sections don't get too narrow */
+    text-align: center;
+  }
+  
+  .contact-info h2, .social-links h2, .hours h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p, .hours p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .social-links a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #333;
+  }
+  /* Responsive Design for Footer */
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+      text-align: center; /* Center text for smaller screens */
+    }
+  
+    .contact-info, .social-links, .hours {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .content-description {
+    margin-top: 24px;
+    text-align: center;
+    
+    box-sizing: border-box;
+  }
+  
+  .content-description h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-style: initial;
+    
+  }
+  
+  .content-description p {
+    font-size: 1.1rem;
+    color: #333;
+    font-style: oblique;
+  }
+  
