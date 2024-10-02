@@ -1,0 +1,27 @@
+<!-- Toolbar Section (Header with Connected Menu) -->
+<mat-toolbar color="primary" class="navbar-header">
+  <!-- Menu Icon Button to Open the Mat Menu -->
+  <button mat-icon-button [matMenuTriggerFor]="appMenu" aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- App Name -->
+  <span class="app-name">PageHub</span>
+
+  <!-- Spacer to Align Items Properly -->
+  <span class="spacer"></span>
+
+  <!-- Register and Login Buttons -->
+  <button mat-raised-button color="gray" class="auth-button">Register</button>
+  <button mat-raised-button color="gray" class="auth-button" (click)="toggleLogin()">
+    {{ isLoggedIn ? 'Logout' : 'Login' }}
+  </button>
+
+</mat-toolbar>
+
+<!-- Mat Menu (Floating Menu) -->
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item (click)="navigateTo('home')">Home</button>
+  <button mat-menu-item (click)="navigateTo('view')">View</button>
+  <button mat-menu-item (click)="navigateTo('fav')">Favourite</button>
+</mat-menu>
