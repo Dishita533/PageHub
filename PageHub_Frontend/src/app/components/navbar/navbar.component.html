@@ -13,8 +13,10 @@
 
   <!-- Register and Login Buttons -->
   <button mat-raised-button color="gray" class="auth-button">Register</button>
-  <button mat-raised-button color="gray" class="auth-button">Login</button>
-  <button mat-raised-button color="gray" class="auth-button">Logout</button>
+  <button mat-raised-button color="gray" class="auth-button" (click)="toggleLogin()">
+    {{ isLoggedIn ? 'Logout' : 'Login' }}
+  </button>
+
 </mat-toolbar>
 
 <!-- Mat Menu (Floating Menu) -->

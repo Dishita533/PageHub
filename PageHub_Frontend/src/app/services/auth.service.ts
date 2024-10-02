@@ -8,16 +8,16 @@ import { Observable } from 'rxjs';
 })
 
 export class AuthService {
-  private baseUrl='http://localhost:3000';
+  // private baseUrl='http://localhost:3000';
 
-  // private baseUrl = 'http://localhost:5022/BookLogin';
-  // private baseUrl1='http://localhost:5022/bookregistration';
+  private baseUrl = 'http://localhost:5022/BookLogin';
+  private baseUrl1='http://localhost:5022/bookregistration';
 
 
   constructor(private http: HttpClient) { }
 
   registerUser(userDetails: User) {
-    return this.http.post(`${this.baseUrl}/users`, userDetails);
+    return this.http.post(`${this.baseUrl1}/users`, userDetails);
   }
 
   getUserByEmail(email: string): Observable<User[]> {

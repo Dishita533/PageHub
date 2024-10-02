@@ -21,6 +21,7 @@ import { MatMenuModule } from '@angular/material/menu';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  isLoggedIn = false;
   // shouldRun = true; // Your condition
   // sidenavOpened = false;
 
@@ -32,4 +33,23 @@ export class NavbarComponent {
     // Implement navigation logic here, e.g., using a Router
     console.log(`Navigating to ${page}`);
   }
+  toggleLogin() {
+    this.isLoggedIn = !this.isLoggedIn;
+    if (this.isLoggedIn) {
+      console.log('User Logged In');
+      // Handle login logic here
+    } else {
+      console.log('User Logged Out');
+      // Handle logout logic here
+    }
+  }
+  private login() {
+    // Implement your login logic here
+    console.log('Logged in');
+  }
+  private logout() {
+    // Implement your logout logic here
+    console.log('Logged out');
+  }
 }
+

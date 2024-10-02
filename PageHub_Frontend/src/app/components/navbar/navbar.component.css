@@ -38,3 +38,12 @@ body, html {
     font-size: 20px;
   }
 }
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
