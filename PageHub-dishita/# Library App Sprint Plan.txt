@@ -1,0 +1,119 @@
+# Library App Sprint Plan
+
+## Sprint 1: Project Setup & Basic Architecture
+
+### User Stories:
+- As a developer, I want to set up the basic project architecture so I can begin building features.
+- As a user, I want to register an account so I can access the library app.
+
+### Tasks:
+- Set up the project using .NET Core for backend and Angular for frontend.
+- Set up CI/CD pipelines using GitLab.
+- Define the database schema for users, books, and wishlists using MySQL.
+- Implement user registration functionality.
+- Create basic unit tests using nUnit for backend and Jasmine for frontend.
+
+## Sprint 2: User Authentication & Book Browsing
+
+### User Stories:
+- As a user, I want to log in to the application so I can access personalized features.
+- As a user, I want to browse books by genre so I can discover new content.
+
+### Tasks:
+- Implement user authentication using JWT tokens.
+- Create login functionality in the frontend.
+- Integrate with the external Book API (https://rapidapi.com/dfskGT/api/book-finder1/).
+- Implement book browsing by genre in both backend and frontend.
+- Add unit tests for authentication and book browsing features.
+
+## Sprint 3: Book Search and Details
+
+### User Stories:
+- As a user, I want to search for books by genre so I can find specific books.
+- As a user, I want to view detailed information about a book.
+
+### Tasks:
+- Implement book search functionality in the backend.
+- Create a search interface in the frontend.
+- Develop a book details page showing all relevant information.
+- Write unit tests for search functionality and book details retrieval.
+
+## Sprint 4: Wishlist Feature
+
+### User Stories:
+- As a user, I want to add books to my wishlist so I can save them for later.
+- As a user, I want to view my wishlist to see the books I've saved.
+
+### Tasks:
+- Implement wishlist functionality in the backend (add, remove, retrieve).
+- Create wishlist UI in the frontend.
+- Add "Add to Wishlist" button on book cards and details page.
+- Implement a separate wishlist page.
+- Write unit tests for wishlist operations.
+
+## Sprint 5: Microservices Architecture
+
+### User Stories:
+- As a developer, I want to refactor the application into microservices for better scalability and maintainability.
+
+### Tasks:
+- Refactor the backend into microservices: User Profile Service, Authentication Service, Book Service, and Wishlist Service.
+- Implement API Gateway using ASP.NET Core.
+- Implement Config Server for centralized configuration.
+- Update unit tests to work with the microservices architecture.
+
+## Sprint 6: Message Bus & Advanced Features
+
+### User Stories:
+- As a developer, I want to implement asynchronous communication between services for better performance.
+- As a user, I want the application to be responsive and fast.
+
+### Tasks:
+- Integrate RabbitMQ or Kafka as a message bus.
+- Implement asynchronous communication for user registration.
+- Optimize API calls and implement caching where appropriate.
+- Conduct performance testing and optimization.
+
+## Sprint 7: UI/UX Enhancements & Responsive Design
+
+### User Stories:
+- As a user, I want a smooth, responsive interface on both desktop and mobile devices.
+
+### Tasks:
+- Refine the UI using Angular Material components.
+- Implement responsive design for mobile compatibility.
+- Conduct usability testing and make necessary improvements.
+- Implement any additional UI features.
+
+## Sprint 8: Security Enhancements & Documentation
+
+### User Stories:
+- As a user, I want my data to be secure.
+- As a developer, I want clear documentation to understand and maintain the system.
+
+### Tasks:
+- Implement additional security measures.
+- Create Swagger documentation for APIs.
+- Write comprehensive documentation for the entire system architecture.
+- Conduct security testing and fix any vulnerabilities.
+
+## Sprint 9: Containerization & Final Testing 
+
+### User Stories:
+- As a developer, I want the application to be easily deployable.
+- As a user, I want a bug-free experience.
+
+### Tasks:
+- Containerize all services using Docker.
+- Set up Docker Compose for container orchestration.
+- Conduct comprehensive testing (unit, integration, end-to-end) using nUnit and Jasmine.
+- Fix any remaining bugs and performance issues.
+- Prepare for deployment.
+
+## Sprint 10: Deployment & Project Wrap-up 
+
+### Tasks:
+- Deploy the application to a cloud platform (e.g., Azure).
+- Conduct final user acceptance testing.
+- Create user guides and help documentation.
+- Prepare and deliver the final project presentation.
