@@ -9,7 +9,8 @@ import { Book } from '../models/book.model';
 export class BookService {
 
   // private apiUrl = 'http://localhost:3000/books'; // Fake API URL
-  private apiUrl = 'http://localhost:5033/api/Book/GetAllBooks';
+ // private apiUrl = 'http://localhost:5033/api/Book/GetAllBooks';
+  private apiUrl='http://localhost:5022/GetAllBooks';
   private favoriteBooks: Book[] = []; // To store favorite books
 
   constructor(private http: HttpClient) {}

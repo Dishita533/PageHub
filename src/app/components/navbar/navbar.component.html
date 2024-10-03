@@ -12,7 +12,7 @@
   <span class="spacer"></span>
 
   <!-- Register and Login Buttons -->
-  <button mat-raised-button color="gray" class="auth-button">Register</button>
+  <button mat-raised-button color="gray" class="auth-button" [routerLink]="['/register']">Register</button>
   <button mat-raised-button color="gray" class="auth-button" (click)="toggleLogin()">
     {{ isLoggedIn ? 'Logout' : 'Login' }}
   </button>
@@ -21,7 +21,9 @@
 
 <!-- Mat Menu (Floating Menu) -->
 <mat-menu #appMenu="matMenu">
-  <button mat-menu-item (click)="navigateTo('home')">Home</button>
-  <button mat-menu-item (click)="navigateTo('view')">View</button>
-  <button mat-menu-item (click)="navigateTo('fav')">Favourite</button>
+ 
+  <button mat-menu-item [routerLink]="['/Home']">Home</button>
+<button mat-menu-item [routerLink]="['/view']">View</button>
+<button mat-menu-item [routerLink]="['/favorite']">Favourite</button>
+
 </mat-menu>
