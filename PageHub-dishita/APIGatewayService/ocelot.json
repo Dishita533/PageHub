@@ -13,7 +13,7 @@
       ],
 
       "UpstreamPathTemplate": "/bookregistration",
-      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamHttpMethod": [ "POST","GET" ]
       
 
     },

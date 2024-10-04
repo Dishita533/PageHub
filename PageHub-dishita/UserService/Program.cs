@@ -39,7 +39,18 @@ namespace UserService
                 options.JsonSerializerOptions.DefaultIgnoreCondition =
                     JsonIgnoreCondition.WhenWritingNull;
             });
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularDev",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200") // Replace with your Angular app's URL
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyOrigin()
+                            .Build();
+                    });
+            });
 
             var app = builder.Build();
 
@@ -55,7 +66,7 @@ namespace UserService
             app.UseCors("Policy");
 
             app.MapControllers();
-
+            app.UseCors("AllowAngularDev");
             app.Run();
         }
     }

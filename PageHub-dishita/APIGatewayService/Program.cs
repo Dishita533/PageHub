@@ -45,29 +45,35 @@ namespace APIGatewayService
                     };
                 });
 
-            builder.Services.AddCors(options =>
+            /*builder.Services.AddCors(options =>
             {
                 options.AddPolicy("Gateway", policy =>
                 {
-                    policy.AllowAnyOrigin()
+                    policy.AllowAnyOrigin().AllowAnyHeader()
                           .AllowAnyMethod();
                 });
+            });*/
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularDev",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200") // Replace with your Angular app's URL
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
             });
             builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
-
+            app.UseCors("AllowAngularDev");
             app.UseAuthentication();
-
-
             app.UseAuthorization();
-
-
             app.MapGet("/", () => "Hello World!"); 
             app.UseOcelot().Wait();
             app.UseStaticFiles();
-            app.UseCors("Gateway");
+            /*app.UseCors("AllowAngularDev");*/
             app.Run();
         }
     }

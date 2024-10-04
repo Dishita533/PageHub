@@ -41,7 +41,7 @@ namespace UserService.Controllers
         }
         [HttpPost]
         [Route("Login")]
-        public IActionResult Login([FromBody] Login login)
+        public IActionResult Login( Login login)
         {
             var res = _userService.Login(login.email, login.password);
             if (res != null)
