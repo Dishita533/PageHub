@@ -4,7 +4,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { FavoriteComponent } from './components/favorite/favorite.component';
 // import { NavbarComponent } from './components/navbar/navbar.component';
 import { ViewComponent } from './components/view/view.component';
-//import { authGuard } from './guards/auth.guard';
+import { authGuard } from './guards/auth.guard';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
@@ -23,8 +23,8 @@ const routes: Routes = [
     component: HomeComponent,
     //canActivate: [authGuard]
   },
-  { path: 'view', component: ViewComponent },
-  { path: 'favorite', component: FavoriteComponent },
+  { path: 'view', component: ViewComponent,canActivate: [authGuard] },
+  { path: 'favorite', component: FavoriteComponent,canActivate: [authGuard] },
   {
     path: '', redirectTo: 'register', pathMatch: 'full'
   }

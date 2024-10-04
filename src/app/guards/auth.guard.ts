@@ -8,12 +8,12 @@ export const authGuard: CanActivateFn = (route, state) => {
   const router = Inject(Router); // Inject the router
 
   // Only access sessionStorage if running in the browser
-  if (isPlatformBrowser(platformId)) {
-    if (sessionStorage.getItem('email')) {
-      return true;
-    } else {
-      return router.navigate(['login']);
-    }
-
+  if(localStorage.getItem('token')!=null){
+    return true;
+   }
+   else{
+    alert('You need to login to view details');
+    return false;
+    
+   }
   }
-};

@@ -17,6 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
+import { login } from '../../models/login.model';
 
 
 @Component({
@@ -52,25 +53,30 @@ export class LoginComponent {
     private _snackBar: MatSnackBar
   ) { }
 
+
   get email() {
     return this.loginForm.controls['email'];
   }
   get password() { return this.loginForm.controls['password']; }
-
+  logindata= new login(); 
   login() {
     if (this.loginForm.valid) {
-      const u = {
-        email: this.loginForm.value.email,
-        password: this.loginForm.value.password
+        this.logindata= {
+          email: this.loginForm.get("email")?.value || '', // Fallback to empty string if null
+          password: this.loginForm.get("password")?.value || ''
+          //"email":this.loginForm.get("email")?.value
+        //"email": this.loginForm.value.email,
+        //"password": this.loginForm.value.password
       };
   
-      this.authService.Login(u).subscribe(
+      this.authService.Login(this.logindata).subscribe(
         (data: any) => {
           console.log(data);
           
           // Check if the API returned a token or success message
           if (data && data.token) {
             sessionStorage.setItem('token', data.token); // Store token for authenticated sessions
+            localStorage.setItem('token', data.token);
             this._snackBar.open('Login successful!', 'Close', {
               duration: 2000,
             });
@@ -79,11 +85,12 @@ export class LoginComponent {
             this._snackBar.open('Invalid credentials!', 'Close', {
               duration: 2000,
             });
+            
           }
         },
         error => {
           console.error(error);
-          this._snackBar.open('Error during login, please try again later!', 'Close', {
+          this._snackBar.open('Invalid Credentials', 'Close', {
             duration: 2000,
           });
         }
