@@ -1,0 +1,23 @@
+/* Ensure that the content fills the available space between the navbar and footer */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px); /* Adjust based on the height of your navbar and footer */
+
+  }
+  
+  /* Specific styling for router-outlet content */
+  .router-content {
+    flex-grow: 1; /* This ensures the main content takes up the remaining space */
+  }
+  
+  /* Adjustments for register component to avoid overflow */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px; /* Optional, for spacing between navbar and form */
+  }
+  
+  
