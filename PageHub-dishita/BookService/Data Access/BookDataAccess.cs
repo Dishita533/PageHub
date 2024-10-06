@@ -36,8 +36,11 @@ namespace BookService.Data_Access
             return _dbcontext.Books.ToList();
         }
 
-       
-        
+        public Book GetBookById(int Id)
+        {
+            return _dbcontext.Books.FirstOrDefault(b => b.Id == Id);
+        }
+
 
 
     }

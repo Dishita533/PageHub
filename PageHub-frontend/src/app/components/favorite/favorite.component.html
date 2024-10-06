@@ -1,0 +1,29 @@
+<div class="main">
+  <mat-toolbar class="header">
+    <div class="header-title-container">
+      <span>Your Favourite Books</span>
+      <!-- Button to navigate back to the view page -->
+      <button mat-raised-button color="accent" class="view-button" (click)="goToView()">Go to View Page</button>
+    </div>
+  </mat-toolbar>
+  <div class="book-container">
+    <mat-card class="book-card" *ngFor="let book of favoriteBooks">
+      <div class="book-content">
+        <img mat-card-image class="book-image" [src]="book.imageUrl" alt="Book Image">
+        <div class="book-details">
+          <mat-card-title>{{ book.title }}</mat-card-title>
+          <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+          <!-- Display the type (fiction or non-fiction) -->
+          <p><strong>Genre:</strong> {{ book.genre }}</p>
+          <p><strong>Type:</strong> {{ book.bookType }}</p>
+          <!-- Add the toggle favorite button here -->
+          <button mat-button [ngClass]="book.isFavorite ? 'favorite-button' : 'favorited-button'"
+        (click)="toggleFavorite(book)">
+  <!-- <mat-icon>{{ book.isFavorite ? 'favorite_border' : 'favorite' }}</mat-icon> -->
+  {{ book.isFavorite ? 'Remove from Favorites' : 'Add to Favorites' }}
+</button>
+
+        </div>
+      </div>
+    </mat-card>
+  </div>

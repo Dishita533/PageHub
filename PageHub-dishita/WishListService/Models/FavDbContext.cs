@@ -10,13 +10,7 @@ namespace WishListService.Models
 
         }
         public virtual DbSet<Favorite> Favorites { get; set; }
-       /* protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Book>()
-                .Property(b => b.BookType)
-                .HasConversion<string>();  // Converts the enum to a string in the database
-
-        }*/
+       
     }
 
 }

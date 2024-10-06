@@ -24,5 +24,9 @@ namespace BookService.Business
         {
             return repository.GetBooks();
         }
+        public Book GetBookById(int Id)
+        {
+            return repository.GetBookById(Id);
+        }
     }
 }

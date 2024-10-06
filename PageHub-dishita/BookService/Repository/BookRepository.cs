@@ -22,5 +22,9 @@ namespace BookService.Repository
         {
             return dataAccess.GetBook(Genre);
         }
+        public Book GetBookById(int Id)
+        {
+            return dataAccess.GetBookById(Id);
+        }
     }
 }

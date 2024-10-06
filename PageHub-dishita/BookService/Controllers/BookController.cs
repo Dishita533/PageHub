@@ -53,7 +53,19 @@ namespace BookService.Controllers
             bookBusiness.AddBook(book);
             return CreatedAtAction(nameof(GetAllBooks), new { Genre = book.Genre }, book); // Returns 201 Created with the new resource's location
         }
+        [HttpGet]
+        [Route("GetBookbyId/{bookId}")]
+        public IActionResult GetBookById(int bookId)
+        {
+            var book = bookBusiness.GetBookById(bookId);
+            if (book == null)
+            {
+                return NotFound();  // Return 404 if no book is found
+            }
+            return Ok(book);  // Return the book data in the response
+        }
     }
-
 }
+
+
     

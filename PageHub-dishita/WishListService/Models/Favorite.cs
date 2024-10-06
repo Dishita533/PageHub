@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using BookService.Models;
+using UserService.Models;
 
 namespace WishListService.Models
 {
@@ -15,6 +16,7 @@ namespace WishListService.Models
         public int BookId { get; set; } // ID of the book
 
         // Navigation properties
+        //public BookUser User { get; set; }
         public Book Book { get; set; }
     }
 }

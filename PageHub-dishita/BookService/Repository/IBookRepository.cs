@@ -6,5 +6,6 @@ namespace BookService.Repository
         List<Book> GetBooks();
         Book GetBook(string Genre);
         void AddBook(Book book);
+        Book GetBookById(int Id);
     }
 }

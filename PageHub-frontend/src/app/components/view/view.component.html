@@ -1,0 +1,39 @@
+<div class="main">
+  <div class="controls-container">
+    <mat-paginator [length]="totalBooks" [pageSize]="pageSize" [pageSizeOptions]="[5, 10, 25, 100]"
+      (page)="onPageChange($event)" aria-label="Select page">
+    </mat-paginator>
+
+    <mat-form-field appearance="outline" class="search-field">
+      <mat-label>Search</mat-label>
+      <input matInput type="text" [(ngModel)]="searchGenre" (input)="onSearchChange()" placeholder="Enter genre">
+      <button mat-icon-button matSuffix (click)="clearSearch()" *ngIf="searchGenre">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <!-- Add this button to navigate to the favorite page -->
+    <button mat-raised-button color="accent" class="favorite-button" (click)="goToFavorite()">Go to Favourite
+      Page</button>
+    <!-- End of navigation button -->
+  </div>
+  <div class="book-container">
+    <mat-card class="book-card" *ngFor="let book of filteredBooks">
+      <div class="book-content">
+        <img mat-card-image class="book-image" [src]="book.imageUrl" alt="Book Image">
+        <div class="book-details">
+          <mat-card-title>{{ book.title }}</mat-card-title>
+          <mat-card-subtitle>{{ book.author }}</mat-card-subtitle>
+          <!-- Display the type (fiction or non-fiction) -->
+          <p><strong>Genre:</strong> {{ book.genre }}</p>
+          <p><strong>Type:</strong> {{ book.bookType }}</p>
+          <!-- Add the toggle favorite button here -->
+          <button mat-button [ngClass]="book.isFavorite ? 'favorited-button' : 'favorite-button'"
+            (click)="toggleFavorite(book)">
+            <mat-icon>{{ book.isFavorite ? 'favorite' : 'favorite_border' }}</mat-icon>
+            {{ book.isFavorite ? 'Remove from Favorites' : 'Add to Favorites' }}
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>

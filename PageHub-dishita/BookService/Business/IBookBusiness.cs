@@ -8,5 +8,6 @@ namespace BookService.Business
         List<Book> GetBooks();
         Book GetBook(string Genre);
         void AddBook(Book book);
+        Book GetBookById(int Id);
     }
 }
