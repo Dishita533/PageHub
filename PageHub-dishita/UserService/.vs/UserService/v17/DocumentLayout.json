@@ -3,24 +3,43 @@
   "WorkspaceRootPath": "D:\\PageHub\\PageHub-dishita\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5952D9F-10FC-4699-A0C4-096906BF44F6}|UserService.csproj|d:\\pagehub\\pagehub-dishita\\userservice\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5952D9F-10FC-4699-A0C4-096906BF44F6}|UserService.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\service layer\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/BookDb/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\service layer\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}|..\\APIGatewayService\\APIGatewayService.csproj|d:\\pagehub\\pagehub-dishita\\apigatewayservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\repository layer\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}|..\\APIGatewayService\\APIGatewayService.csproj|d:\\pagehub\\pagehub-dishita\\apigatewayservice\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\repository layer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}|..\\APIGatewayService\\APIGatewayService.csproj|d:\\pagehub\\pagehub-dishita\\apigatewayservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\dataaccess layer\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5952D9F-10FC-4699-A0C4-096906BF44F6}|UserService.csproj|d:\\pagehub\\pagehub-dishita\\userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5952D9F-10FC-4699-A0C4-096906BF44F6}|UserService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\dataaccess layer\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3791493-C790-4286-AE2B-C5E18F2A3E6E}|..\\BookService\\BookService.csproj|d:\\pagehub\\pagehub-dishita\\bookservice\\models\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\models\\favdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\wishlistservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64557AD-C601-4E37-9464-98789A0FE77D}|..\\WishListService\\WishListService.csproj|d:\\pagehub\\pagehub-dishita\\wishlistservice\\controllers\\favoritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3791493-C790-4286-AE2B-C5E18F2A3E6E}|..\\BookService\\BookService.csproj|d:\\pagehub\\pagehub-dishita\\bookservice\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3791493-C790-4286-AE2B-C5E18F2A3E6E}|..\\BookService\\BookService.csproj|d:\\pagehub\\pagehub-dishita\\bookservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,81 +49,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookDbcontext.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\BookService\\Models\\BookDbcontext.cs",
+              "RelativeDocumentMoniker": "..\\BookService\\Models\\BookDbcontext.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\BookService\\Models\\BookDbcontext.cs",
+              "RelativeToolTip": "..\\BookService\\Models\\BookDbcontext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:34:19.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\BookService\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "..\\BookService\\Models\\Book.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\BookService\\Models\\Book.cs",
+              "RelativeToolTip": "..\\BookService\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:33:30.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FavoriteController.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Controllers\\FavoriteController.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Controllers\\FavoriteController.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Controllers\\FavoriteController.cs",
+              "RelativeToolTip": "..\\WishListService\\Controllers\\FavoriteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:30:23.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\UserService\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
-              "ToolTip": "D:\\PageHub\\PageHub-dishita\\UserService\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "Controllers\\BooksController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAjAAAA",
+              "Title": "Service.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Service Layer\\Service.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Service Layer\\Service.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Service Layer\\Service.cs",
+              "RelativeToolTip": "..\\WishListService\\Service Layer\\Service.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T07:34:23.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\UserService\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\PageHub\\PageHub-dishita\\UserService\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T06:57:39.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ocelot.json",
-              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\ocelot.json",
-              "RelativeDocumentMoniker": "..\\APIGatewayService\\ocelot.json",
-              "ToolTip": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\ocelot.json",
-              "RelativeToolTip": "..\\APIGatewayService\\ocelot.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T04:55:29.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\APIGatewayService\\appsettings.json",
-              "ToolTip": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\appsettings.json",
-              "RelativeToolTip": "..\\APIGatewayService\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T04:50:23.928Z",
+              "WhenOpened": "2024-10-06T12:28:41.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/BookDb/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-10-02T10:29:04.808Z",
+              "Title": "IService.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Service Layer\\IService.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Service Layer\\IService.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Service Layer\\IService.cs",
+              "RelativeToolTip": "..\\WishListService\\Service Layer\\IService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:28:11.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\Program.cs",
-              "RelativeDocumentMoniker": "..\\APIGatewayService\\Program.cs",
-              "ToolTip": "D:\\PageHub\\PageHub-dishita\\APIGatewayService\\Program.cs",
-              "RelativeToolTip": "..\\APIGatewayService\\Program.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwEcAAAAjAAAA",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Repository Layer\\Repository.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Repository Layer\\Repository.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Repository Layer\\Repository.cs",
+              "RelativeToolTip": "..\\WishListService\\Repository Layer\\Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T05:04:39.264Z",
+              "WhenOpened": "2024-10-06T12:27:53.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Repository Layer\\IRepository.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Repository Layer\\IRepository.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Repository Layer\\IRepository.cs",
+              "RelativeToolTip": "..\\WishListService\\Repository Layer\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:27:35.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\DataAccess Layer\\DataAccess.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\DataAccess Layer\\DataAccess.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\DataAccess Layer\\DataAccess.cs",
+              "RelativeToolTip": "..\\WishListService\\DataAccess Layer\\DataAccess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:26:34.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDataAccess.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\DataAccess Layer\\IDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\DataAccess Layer\\IDataAccess.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\DataAccess Layer\\IDataAccess.cs",
+              "RelativeToolTip": "..\\WishListService\\DataAccess Layer\\IDataAccess.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:26:11.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FavDbContext.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Models\\FavDbContext.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Models\\FavDbContext.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Models\\FavDbContext.cs",
+              "RelativeToolTip": "..\\WishListService\\Models\\FavDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:25:07.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\Models\\Favorite.cs",
+              "RelativeDocumentMoniker": "..\\WishListService\\Models\\Favorite.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\Models\\Favorite.cs",
+              "RelativeToolTip": "..\\WishListService\\Models\\Favorite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:24:39.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WishListService",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
+              "RelativeDocumentMoniker": "..\\WishListService\\WishListService.csproj",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
+              "RelativeToolTip": "..\\WishListService\\WishListService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-06T12:20:58.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PageHub\\PageHub-dishita\\BookService\\Program.cs",
+              "RelativeDocumentMoniker": "..\\BookService\\Program.cs",
+              "ToolTip": "D:\\PageHub\\PageHub-dishita\\BookService\\Program.cs",
+              "RelativeToolTip": "..\\BookService\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAcwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T17:02:42.155Z",
               "EditorCaption": ""
             }
           ]

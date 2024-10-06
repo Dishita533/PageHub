@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WishListService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb24b8f19c49fa34e18bc42f10ab19dc8535f146")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99f6570423ce2deed7b587ce0452b5e0e0e2bf01")]
 [assembly: System.Reflection.AssemblyProductAttribute("WishListService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WishListService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
