@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Consul/1.7.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Consul.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Consul.dll": {}
+        }
+      },
       "FluentValidation/11.8.0": {
         "type": "package",
         "compile": {
@@ -671,6 +684,23 @@
           }
         }
       },
+      "Ocelot.Provider.Consul/23.3.3": {
+        "type": "package",
+        "dependencies": {
+          "Consul": "1.7.14.1",
+          "Ocelot": "23.3.3"
+        },
+        "compile": {
+          "lib/net8.0/Ocelot.Provider.Consul.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Ocelot.Provider.Consul.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.8.1": {
         "type": "package",
         "dependencies": {
@@ -852,6 +882,19 @@
     }
   },
   "libraries": {
+    "Consul/1.7.14.1": {
+      "sha512": "JM1/sHsPhxTcawNKp0PaPRXeMqghjbn9L6lgPyNW6P5SnkcJ/rchQsHnDm8TlT51/ARX4bmboUzFRzU6arjSQQ==",
+      "type": "package",
+      "path": "consul/1.7.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "consul.1.7.14.1.nupkg.sha512",
+        "consul.nuspec",
+        "lib/net461/Consul.dll",
+        "lib/netstandard2.0/Consul.dll"
+      ]
+    },
     "FluentValidation/11.8.0": {
       "sha512": "TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
       "type": "package",
@@ -2011,6 +2054,23 @@
         "ocelot.nuspec"
       ]
     },
+    "Ocelot.Provider.Consul/23.3.3": {
+      "sha512": "X5pmq8WowF1caLnRHD3NuF8GQI9D9R6sBn+r5YGly6SA7/Nz24W3hQ/PRhjhgtRv9SDafQU0YGQDbRb7xIBFNw==",
+      "type": "package",
+      "path": "ocelot.provider.consul/23.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Ocelot.Provider.Consul.dll",
+        "lib/net6.0/Ocelot.Provider.Consul.xml",
+        "lib/net7.0/Ocelot.Provider.Consul.dll",
+        "lib/net7.0/Ocelot.Provider.Consul.xml",
+        "lib/net8.0/Ocelot.Provider.Consul.dll",
+        "lib/net8.0/Ocelot.Provider.Consul.xml",
+        "ocelot.provider.consul.23.3.3.nupkg.sha512",
+        "ocelot.provider.consul.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.8.1": {
       "sha512": "JN6ccH37QKtNOwBrvSxc+jBYIB+cw6RlZie2IKoJhjjf6HzBH+2kPJCpxmJ5EHIqmxvq6aQG+0A8XklGx9rAxA==",
       "type": "package",
@@ -2316,24 +2376,25 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.8",
       "Microsoft.AspNetCore.DataProtection >= 8.0.8",
       "Ocelot >= 23.3.3",
+      "Ocelot.Provider.Consul >= 23.3.3",
       "Swashbuckle.AspNetCore >= 6.8.1",
       "System.IdentityModel.Tokens.Jwt >= 8.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dishi\\.nuget\\packages\\": {}
+    "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
+      "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
       "projectName": "APIGatewayService",
-      "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
-      "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\obj\\",
+      "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
+      "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2341,6 +2402,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2380,6 +2442,10 @@
             "target": "Package",
             "version": "[23.3.3, )"
           },
+          "Ocelot.Provider.Consul": {
+            "target": "Package",
+            "version": "[23.3.3, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.8.1, )"
@@ -2408,7 +2474,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

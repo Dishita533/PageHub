@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj": {}
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj": {
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj",
+        "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj",
         "projectName": "BookService",
-        "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj",
-        "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\obj\\",
+        "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj",
+        "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj",
-        "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\obj\\",
+        "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj",
+        "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,6 +106,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -178,21 +180,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj": {
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
+        "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
         "projectName": "WishListService",
-        "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
-        "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\WishListService\\obj\\",
+        "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\WishListService\\WishListService.csproj",
+        "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\WishListService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -200,17 +202,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj": {
-                "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj"
+              "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj": {
+                "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\BookService\\BookService.csproj"
               },
-              "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
-                "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj"
+              "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
+                "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj"
               }
             }
           }
@@ -268,7 +271,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

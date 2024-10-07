@@ -70,10 +70,10 @@ export class ViewComponent implements OnInit {
   toggleFavorite(book: Book): void {
     if (book.isFavorite) {
       // If the book is already a favorite, remove it
-      this.bookService.removeFavorite(book);
+      this.bookService.removeFavorite(book, 'userEmail');
     } else {
       // If the book is not a favorite, add it to favorites
-      this.bookService.addFavorite(book);
+      this.bookService.addFavorite(book, 'userEmail');
     }
     // Toggle the favorite status
     book.isFavorite = !book.isFavorite;

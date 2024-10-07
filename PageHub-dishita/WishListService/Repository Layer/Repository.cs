@@ -10,28 +10,29 @@ namespace WishListService.Repository_Layer
 
         public Repository(FavDbContext _context)
         {
-            _context = _context;
+            _context = _context ?? throw new ArgumentNullException(nameof(_context));
         }
-        public void AddFavorite(string userEmail, int bookId)
+        public List<Favorite> AddFavorite(Favorite favorite)
         {
-            var favorite = new Favorite
+            /* var favorite = new Favorite
+             {
+                 Email = userEmail,
+                 BookId = bookId
+             };*/
+            if (favorite == null)
             {
-                Email = userEmail,
-                BookId = bookId
-            };
-
+                throw new ArgumentNullException(nameof(favorite));
+            }
             _context.Favorites.Add(favorite);
             _context.SaveChanges();
+            return _context.Favorites.ToList();
         }
 
-        public List<int> GetFavoritesByUser(string userEmail)
+        public List<Favorite> GetFavoritesByUser(string userEmail)
         {
-            return _context.Favorites
-                .Where(f => f.Email == userEmail)
-                .Select(f => f.BookId)
-                .ToList();
+            return _context.Favorites.Where(f => f.Email == userEmail).ToList();
         }
-        public void RemoveFavorite(string userEmail, int bookId)
+        public List<Favorite> RemoveFavorite(string userEmail, int bookId)
         {
             var favorite = _context.Favorites
                 .FirstOrDefault(f => f.Email == userEmail && f.Book.Id == bookId);
@@ -41,6 +42,7 @@ namespace WishListService.Repository_Layer
                 _context.Favorites.Remove(favorite);
                 _context.SaveChanges();
             }
+            return _context.Favorites.ToList();
         }
     }
 }

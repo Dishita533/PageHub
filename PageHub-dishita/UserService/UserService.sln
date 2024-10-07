@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService.csproj", "{E5952D9F-10FC-4699-A0C4-096906BF44F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService", "UserService.csproj", "{E5952D9F-10FC-4699-A0C4-096906BF44F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "..\AuthenticationService\AuthenticationService.csproj", "{E94D3962-D47E-4BEC-B73B-0EECE39358DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService", "..\AuthenticationService\AuthenticationService.csproj", "{E94D3962-D47E-4BEC-B73B-0EECE39358DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookService", "..\BookService\BookService.csproj", "{F3791493-C790-4286-AE2B-C5E18F2A3E6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookService", "..\BookService\BookService.csproj", "{F3791493-C790-4286-AE2B-C5E18F2A3E6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishListService", "..\WishListService\WishListService.csproj", "{B64557AD-C601-4E37-9464-98789A0FE77D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WishListService", "..\WishListService\WishListService.csproj", "{B64557AD-C601-4E37-9464-98789A0FE77D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGatewayService", "..\APIGatewayService\APIGatewayService.csproj", "{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGatewayService", "..\APIGatewayService\APIGatewayService.csproj", "{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsulService", "..\ConsulService\ConsulService.csproj", "{E252B44D-6EA7-4ECB-908E-03911BD5E06A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsulService", "..\ConsulService\ConsulService.csproj", "{E252B44D-6EA7-4ECB-908E-03911BD5E06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FavoriteService", "..\FavoriteService\FavoriteService.csproj", "{9E2FFB4E-1DF2-4C48-830E-FFAF263A2C2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E252B44D-6EA7-4ECB-908E-03911BD5E06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E252B44D-6EA7-4ECB-908E-03911BD5E06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E252B44D-6EA7-4ECB-908E-03911BD5E06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E2FFB4E-1DF2-4C48-830E-FFAF263A2C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E2FFB4E-1DF2-4C48-830E-FFAF263A2C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E2FFB4E-1DF2-4C48-830E-FFAF263A2C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E2FFB4E-1DF2-4C48-830E-FFAF263A2C2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

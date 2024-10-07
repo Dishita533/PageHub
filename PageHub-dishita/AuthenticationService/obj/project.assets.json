@@ -428,19 +428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dishi\\.nuget\\packages\\": {}
+    "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\AuthenticationService\\AuthenticationService.csproj",
+      "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\AuthenticationService\\AuthenticationService.csproj",
       "projectName": "AuthenticationService",
-      "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\AuthenticationService\\AuthenticationService.csproj",
-      "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\AuthenticationService\\obj\\",
+      "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\AuthenticationService\\AuthenticationService.csproj",
+      "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\AuthenticationService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -448,6 +448,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -495,7 +496,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

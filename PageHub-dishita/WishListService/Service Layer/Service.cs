@@ -16,18 +16,18 @@ namespace WishListService.Service_Layer
             
         }
 
-        public void RemoveFavorite(string userEmail, int bookId)
+        public List<Favorite> RemoveFavorite(string userEmail, int bookId)
         {
-            _favoriteRepository.RemoveFavorite(userEmail, bookId);
+           return _favoriteRepository.RemoveFavorite(userEmail, bookId);
         }
 
-        public void AddFavorite(string userEmail, int bookId)
+        public List<Favorite> AddFavorite(Favorite favorite)
         {
-            _favoriteRepository.AddFavorite(userEmail, bookId);
+            return _favoriteRepository.AddFavorite(favorite);
         }
 
         // Retrieves all favorite book IDs for a specific user
-        public List<int> GetFavoritesByUser(string userEmail)
+        public List<Favorite> GetFavoritesByUser(string userEmail)
         {
             return _favoriteRepository.GetFavoritesByUser(userEmail);
         }

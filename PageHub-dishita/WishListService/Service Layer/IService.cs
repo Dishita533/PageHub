@@ -5,8 +5,8 @@ namespace WishListService.Service_Layer
 {
     public interface IService
     {
-        void AddFavorite(string userEmail, int bookId);
-        List<int> GetFavoritesByUser(string userEmail);
-        void RemoveFavorite(string userEmail, int bookId);
+        List<Favorite> AddFavorite(Favorite favorite);  // Add a favorite book
+        List<Favorite> GetFavoritesByUser(string userEmail);  // Get favorite book IDs by user
+        List<Favorite> RemoveFavorite(string userEmail, int bookId);
     }
 }

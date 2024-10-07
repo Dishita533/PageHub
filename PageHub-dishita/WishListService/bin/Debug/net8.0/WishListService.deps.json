@@ -922,10 +922,7 @@
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "BookService.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BookService.dll": {}
         }
       },
       "UserService/1.0.0": {
@@ -938,10 +935,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.1.0"
         },
         "runtime": {
-          "UserService.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "UserService.dll": {}
         }
       }
     }

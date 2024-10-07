@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj": {}
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj": {
+    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
+        "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
         "projectName": "APIGatewayService",
-        "projectPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
-        "packagesPath": "C:\\Users\\dishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dishi\\Downloads\\PageHub-new_fe\\PageHub-new_fe\\PageHub\\PageHub-dishita\\APIGatewayService\\obj\\",
+        "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\APIGatewayService.csproj",
+        "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +62,10 @@
               "target": "Package",
               "version": "[23.3.3, )"
             },
+            "Ocelot.Provider.Consul": {
+              "target": "Package",
+              "version": "[23.3.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.8.1, )"
@@ -89,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

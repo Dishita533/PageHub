@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Ocelot.Provider.Consul;
+
 
 namespace APIGatewayService
 {
@@ -14,7 +16,8 @@ namespace APIGatewayService
 
             var builder = WebApplication.CreateBuilder(args);
             builder.Configuration.AddJsonFile("ocelot.json");
-            builder.Services.AddOcelot();
+            /* builder.Services.AddOcelot();*/
+            builder.Services.AddOcelot().AddConsul();
             /*var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("Jwt").GetSection("Secret").Value));
             builder.Services.AddAuthentication(op =>
             {

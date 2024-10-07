@@ -50,7 +50,7 @@ namespace WishListService
             }
 
             app.UseAuthorization();
-            app.UseStaticFiles();
+            /*app.UseStaticFiles();*/
             app.UseCors("Favorites");
             app.MapControllers();
 

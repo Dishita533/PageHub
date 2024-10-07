@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WishListService.Models;
 using WishListService.Service_Layer;
 
 namespace WishListService.Controllers
@@ -15,9 +16,13 @@ namespace WishListService.Controllers
         }
         [HttpPost]
         [Route("/AddToFavourites")]
-        public IActionResult AddToFavorites([FromQuery] string userEmail, [FromQuery] int bookId)
+        public IActionResult AddToFavorites([FromBody] Favorite favorite)
         {
-            _favoriteService.AddFavorite(userEmail, bookId);
+            if (favorite == null)
+            {
+                return BadRequest(new { message = "Favorite cannot be null." });
+            }
+            _favoriteService.AddFavorite(favorite);
             return Ok(new { message = "Book added to favorites." });
         }
 
@@ -26,7 +31,7 @@ namespace WishListService.Controllers
         [Route("/GetFavoritesByUser/{email}")]
         public IActionResult GetFavoritesByUser(string email)
         {
-            List<int> favoriteBookIds = _favoriteService.GetFavoritesByUser(email);
+            List<Favorite> favoriteBookIds = _favoriteService.GetFavoritesByUser(email);
             if (favoriteBookIds == null || favoriteBookIds.Count == 0)
             {
                 return NotFound(new { message = "No favorite books found for this user." });
@@ -35,7 +40,7 @@ namespace WishListService.Controllers
         }
         [HttpDelete]
         [Route("/RemoveFromFavourites")]
-        public IActionResult RemoveFromFavorites([FromQuery] string userEmail, [FromQuery] int bookId)
+        public IActionResult RemoveFromFavorites([FromQuery] string userEmail,[FromQuery]  int bookId)
         {
             _favoriteService.RemoveFavorite(userEmail, bookId);
             return Ok(new { message = "Book removed from favorites." });
