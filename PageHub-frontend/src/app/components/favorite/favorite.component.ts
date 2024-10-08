@@ -31,9 +31,9 @@ export class FavoriteComponent implements OnInit {
   }
   toggleFavorite(book: Book): void {
     if (book.isFavorite) {
-      this.bookService.removeFavorite(book, 'userEmail');
+      this.bookService.removeFavorite(book);
     } else {
-      this.bookService.addFavorite(book ,'userEmail');
+      this.bookService.addFavorite(book);
     }
     book.isFavorite = !book.isFavorite;
     this.fetchFavoriteBooks(); // Refresh the list to remove the book if it is unfavorited

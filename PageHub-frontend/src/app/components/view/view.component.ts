@@ -38,11 +38,12 @@ export class ViewComponent implements OnInit {
   pageSize: number = 10;
   totalBooks: number = 0;
   currentPage: number = 0;
-
+  email:any;
   constructor(private bookService: BookService, private router: Router) {}
 
   ngOnInit(): void {
     this.fetchBooks();
+    this.email = localStorage.getItem('email');
   }
 
   fetchBooks(): void {
@@ -70,18 +71,14 @@ export class ViewComponent implements OnInit {
   toggleFavorite(book: Book): void {
     if (book.isFavorite) {
       // If the book is already a favorite, remove it
-      this.bookService.removeFavorite(book, 'userEmail');
+      this.bookService.removeFavorite(book);
     } else {
       // If the book is not a favorite, add it to favorites
-      this.bookService.addFavorite(book, 'userEmail');
+      this.bookService.addFavorite(book);
     }
     // Toggle the favorite status
     book.isFavorite = !book.isFavorite;
-  
-    // Update the list of favorites in the FavoritesComponent
-    this.bookService.updateFavoritesList();
   }
-  
 
   onSearchChange(): void {
     this.currentPage = 0;

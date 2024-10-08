@@ -171,7 +171,7 @@
       "DownstreamScheme": "http",
       "RouteIsCaseSensitive": false,
       "UpstreamPathTemplate": "/api/weather",
-      "UpstreamHttpMethod": [ "Get", "Put", "Post", "Delete" ],
+      "UpstreamHttpMethod": [ "Get" ],
       "ServiceName": "SampleAPI",
       "LoadBalancerOptions": {
         "Type": "LeastConnection"
@@ -185,7 +185,7 @@
   "GlobalConfiguration": {
     "ServiceDiscoveryProvider": {
       "Scheme": "http",
-      "Host": "VM-Lab11-36-373",
+      "Host": "localhost",
       "Port": 8500,
       "Type": "Consul",
       "PollingInterval": 1000

@@ -22,61 +22,43 @@ import { Router, RouterModule } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  isLoggedIn = false;
+  isLoggedInFlag = false;
+  message:string='';
   constructor(private router: Router) {}
-  toggleLogin() {
-
-    if (this.isLoggedIn) {
-      
-      this.router.navigate(['/Login']);
-      // this.router.navigate(['/']); // Redirect to home or login page after logout
-    } else {
-      // Navigate to login page for login
-      this.router.navigate(['/Login']).then(() => {
-        // After successful login, change isLoggedIn to true (this is for demonstration)
-        // Ideally, this should happen after verifying login credentials in your login component
-        // this.isLoggedIn = true;
-        // localStorage.setItem('token', 'dummy_token'); // Set a token or session data
-      });
-    }
-    // logout() {
-    //   this.router.navigate(['/login']);
-    // }
-  
-    // login(){
-    //   this.router.navigate(['/login']);
-    // }
+  ngOnInit() {
+    this.updateLoginStatus();  // Update login status when component initializes
+    this.updateMessage();  // Update the message when component initializes
   }
-  // toggleLogin() {
-  //   if (this.isLoggedIn) {
-  //     // Perform logout logic here, e.g., clearing tokens or session data
-  //     this.isLoggedIn = false;
-  //     this.router.navigate(['/']); // Redirect to home page or login page after logout
-  //   } else {
-  //     // Navigate to login page
-  //     this.router.navigate(['/Login']);
-  //   }
-  // }
-  // navigateTo(page: string) {
-  //   // Implement navigation logic here, e.g., using a Router
-  //   console.log(Navigating to ${page});
-  // }
-  // toggleLogin() {
-  //   this.isLoggedIn = !this.isLoggedIn;
-  //   if (this.isLoggedIn) {
-  //     console.log('User Logged In');
-  //     // Handle login logic here
-  //   } else {
-  //     console.log('User Logged Out');
-  //     // Handle logout logic here
-  //   }
-  // }
-  // private login() {
-  //   // Implement your login logic here
-  //   console.log('Logged in');
-  // }
-  // private logout() {
-  //   // Implement your logout logic here
-  //   console.log('Logged out');
-  // }
-} 
+
+  updateLoginStatus() {
+    this.isLoggedInFlag = this.checkLoginStatus();  // Set the flag based on token existence
+  }
+
+  checkLoginStatus(): boolean {
+    return localStorage.getItem('token') !== null;  // Check if the token exists
+  }
+  updateMessage() {
+    if (this.checkLoginStatus()) {
+      this.message = 'Logout';  // Set message to 'Logout' if logged in
+    } else {
+      this.message = 'Login';  // Set message to 'Login' if not logged in
+    }
+  }
+  toggleLogin() {
+    if (this.checkLoginStatus()) {
+      this.logout();  // Logs out the user if token is present
+    } else {
+      this.router.navigate(['/Login']);  // Redirects to login page if not logged in
+    }
+  }
+
+  logout() {
+    localStorage.removeItem('token');  // Remove the token from localStorage
+    localStorage.removeItem('userEmail');  // Optionally remove the user email
+    this.updateLoginStatus();  // Update login status after logout
+    this.updateMessage();  // Update the message after logout
+    alert('Logout successful!');
+    this.router.navigate(['/Home']);  // Redirect to the home or login page
+  }
+}
+  

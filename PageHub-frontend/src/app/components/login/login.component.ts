@@ -77,6 +77,7 @@ export class LoginComponent {
           if (data && data.token) {
             sessionStorage.setItem('token', data.token); // Store token for authenticated sessions
             localStorage.setItem('token', data.token);
+            localStorage.setItem('email', this.email+'')
             this._snackBar.open('Login successful!', 'Close', {
               duration: 2000,
             });

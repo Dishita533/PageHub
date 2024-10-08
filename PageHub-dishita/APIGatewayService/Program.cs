@@ -32,6 +32,12 @@ namespace APIGatewayService
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = key
             });*/
+
+            /*  var jwtKey = builder.Configuration["JWT:Key"] ?? throw new ArgumentNullException("JWT:Key", "JWT Key cannot be null");
+            var jwtIssuer = builder.Configuration["JWT:Issuer"] ?? throw new ArgumentNullException("JWT:Issuer", "JWT Issuer cannot be null");
+            var jwtAudience = builder.Configuration["JWT:Audience"] ?? throw new ArgumentNullException("JWT:Audience", "JWT Audience cannot be null");
+
+            var key = Encoding.UTF8.GetBytes(jwtKey);*/
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer("JwtBearer", options =>
                 {
@@ -75,7 +81,7 @@ namespace APIGatewayService
             app.UseAuthorization();
             app.MapGet("/", () => "Hello World!"); 
             app.UseOcelot().Wait();
-            app.UseStaticFiles();
+
             /*app.UseCors("AllowAngularDev");*/
             app.Run();
         }

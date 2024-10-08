@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsulService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28bd8d62292d26e1b4ab38af1c6ba383e66e8619")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bcc0bd24f0b2cfdb04f56d5d1500b0eb8fcb946")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsulService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsulService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

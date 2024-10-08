@@ -19,6 +19,20 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
+  // Store the token in sessionStorage
+  setToken(token: string): void {
+    sessionStorage.setItem('token', token);
+  }
+
+  // Retrieve the token from sessionStorage
+  getToken(): string | null {
+    return sessionStorage.getItem('token');
+  }
+
+  // Clear the token from sessionStorage (logout functionality)
+  clearToken(): void {
+    sessionStorage.removeItem('token');
+  }
   registerUser(userDetails:any) {
     return this.http.post(`${this.baseUrl1}`, userDetails);
   }

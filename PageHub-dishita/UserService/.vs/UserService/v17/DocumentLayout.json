@@ -3,22 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}|..\\APIGatewayService\\APIGatewayService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\apigatewayservice\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252B44D-6EA7-4ECB-908E-03911BD5E06A}|..\\ConsulService\\ConsulService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\consulservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252B44D-6EA7-4ECB-908E-03911BD5E06A}|..\\ConsulService\\ConsulService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\consulservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252B44D-6EA7-4ECB-908E-03911BD5E06A}|..\\ConsulService\\ConsulService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\consulservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E7107EC-3D4E-4B30-85DE-F50492D3CEA1}|..\\APIGatewayService\\APIGatewayService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\apigatewayservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E252B44D-6EA7-4ECB-908E-03911BD5E06A}|..\\ConsulService\\ConsulService.csproj|c:\\users\\c02-labuser0069373\\downloads\\pagehub\\pagehub\\pagehub-dishita\\consulservice\\consulcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/Bookdb/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,84 +13,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ConsulService\\Program.cs",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\Program.cs",
-              "RelativeToolTip": "..\\ConsulService\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T16:53:04.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ocelot.json",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\ocelot.json",
-              "RelativeDocumentMoniker": "..\\APIGatewayService\\ocelot.json",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\ocelot.json",
-              "RelativeToolTip": "..\\APIGatewayService\\ocelot.json",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAAALsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T16:44:38.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\Program.cs",
-              "RelativeDocumentMoniker": "..\\APIGatewayService\\Program.cs",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\APIGatewayService\\Program.cs",
-              "RelativeToolTip": "..\\APIGatewayService\\Program.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAAAAYAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T16:33:22.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\ConsulService\\appsettings.json",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\appsettings.json",
-              "RelativeToolTip": "..\\ConsulService\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T16:15:39.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "..\\ConsulService\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\Properties\\launchSettings.json",
-              "RelativeToolTip": "..\\ConsulService\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-07T16:15:30.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConsulContext.cs",
-              "DocumentMoniker": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\ConsulContext.cs",
-              "RelativeDocumentMoniker": "..\\ConsulService\\ConsulContext.cs",
-              "ToolTip": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\ConsulContext.cs",
-              "RelativeToolTip": "..\\ConsulService\\ConsulContext.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T15:51:59.528Z",
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/Bookdb/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-08T17:59:38.052Z",
               "EditorCaption": ""
             }
           ]

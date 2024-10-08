@@ -8,4 +8,5 @@ export interface Book {
     genre: string;
     isFavorite?: boolean;
     bookType: 'Fiction' | 'Non-Fiction';
+    
   }

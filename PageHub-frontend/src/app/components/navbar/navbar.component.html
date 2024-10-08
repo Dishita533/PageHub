@@ -14,8 +14,8 @@
   <!-- Register and Login Buttons -->
   <button mat-raised-button color="gray" class="auth-button" [routerLink]="['/register']">Register</button>
   <button mat-raised-button color="gray" class="auth-button" (click)="toggleLogin()">
-    {{ isLoggedIn ? 'Logout' : 'Login' }}
-  </button>
+    {{ message }}  
+ </button>
 
 </mat-toolbar>
 
