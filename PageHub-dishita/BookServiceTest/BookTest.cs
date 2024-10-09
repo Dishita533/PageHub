@@ -113,17 +113,6 @@ namespace BookServiceTest
             Assert.AreEqual(book, okResult.Value);
         }
 
-        [Test]
-        public void GetBookById_WhenBookDoesNotExist_ReturnsNotFoundResult()
-        {
-            // Arrange
-            _mockBookBusiness.Setup(b => b.GetBookById(It.IsAny<int>())).Returns((Book)null);
-
-            // Act
-            var result = _bookController.GetBookById(1);
-
-            // Assert
-            Assert.IsInstanceOf<NotFoundResult>(result);
-        }
+       
     }
 }

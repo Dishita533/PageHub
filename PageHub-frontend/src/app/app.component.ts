@@ -21,5 +21,5 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   constructor(private messageService: MessageService) {}
-  title = 'angn';
+  title = 'PageHub';
 }

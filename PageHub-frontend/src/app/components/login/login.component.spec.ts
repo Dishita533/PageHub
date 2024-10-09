@@ -8,6 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MessageService } from 'primeng/api';
 import { ActivatedRoute } from '@angular/router';
 import { By } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -26,7 +27,7 @@ describe('LoginComponent', () => {
     activatedRouteMock = { params: of({}) }; // Mock ActivatedRoute
 
     await TestBed.configureTestingModule({
-      imports: [ReactiveFormsModule, LoginComponent],
+      imports: [ReactiveFormsModule, LoginComponent,HttpClientModule],
       providers: [
         { provide: AuthService, useValue: authServiceMock },
         { provide: Router, useValue: routerMock },

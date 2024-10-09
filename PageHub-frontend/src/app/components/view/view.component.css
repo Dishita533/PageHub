@@ -6,65 +6,75 @@
   padding: 20px;
 }
 
+/* Header Section */
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Allura", cursive;
-  font-weight: 400;
-  font-style: normal;
   font-size: 40px;
+  background-color: rgb(177, 168, 168);
+  padding: 10px;
+  margin-bottom: 20px;
 }
+
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-button {
+  margin-top: 20px;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+/* Controls container for pagination and search */
 .controls-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
-  border-radius: 4px;
-  flex-wrap: wrap;
-  margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .search-field {
-  margin-top: 0;
   width: 300px;
-  color: black;
-  max-width: 300px;
-  margin-bottom: 10px;
-}
-mat-label{
-  color: black;
-
+  max-width: 100%;
 }
 
 mat-paginator {
-  margin-top: 0;
+  margin: 0 auto 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
-}
-.favorite-button {
-  background-color: #303f9f;
-  margin-top: 0;
-  color: white; /* Button text color */
-  border-radius: 4px; /* Rounded corners */
-  padding: 8px 16px; /* Padding for button */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.favorite-button:hover{
-  background-color: red; /* Darker shade on hover */
+.favorite-button {
+  background-color: #303f9f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
+
+.favorite-button:hover {
+  background-color: red;
+}
+
 .favorited-button {
-  background-color: red; /* Red background for "Remove from Favorites" */
-  color: white; /* Ensure text remains white */
+  background-color: red;
+  color: white;
 }
 
 .favorited-button:hover {
-  background-color: darkred; /* Darker red on hover */
+  background-color: darkred;
 }
+
+/* Responsive Book Container */
 .book-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -105,50 +115,39 @@ mat-paginator {
   flex-grow: 1;
 }
 
-mat-card-subtitle {
-  font-size: 18px;
-  font-family: "Dancing Script", cursive;
-  color: rgba(250, 0, 0, 0.7);
-  margin-top: 4px;
-}
-
-.header {
-  position: relative;
-}
-
-.title-container {
-  display: flex;
-  flex-direction: column;
-}
-
 mat-card-title {
   font-size: 22px;
   margin-bottom: 4px;
 }
 
-.heart-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 8px;
+mat-card-subtitle {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: rgba(250, 0, 0, 0.7);
 }
 
-.heart-icon {
-  color: #888;
-  font-size: 24px;
-  transition: color 0.3s ease;
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .book-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.favorited {
-  color: #ff4081;
-}
+@media (max-width: 600px) {
+  .header {
+    font-size: 30px;
+  }
 
-mat-card-content {
-  margin-top: 12px;
-}
+  .view-button {
+    width: 100%;
+  }
 
-mat-card-content p {
-  margin: 4px 0;
+  .book-container {
+    grid-template-columns: 1fr;
+  }
+
+  .book-image {
+    width: 100px;
+    height: 150px;
+  }
 }

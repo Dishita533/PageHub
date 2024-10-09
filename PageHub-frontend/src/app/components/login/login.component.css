@@ -1,7 +1,9 @@
 /* Main container for the login page */
 .login-container {
   display: flex;
-  height: 100vh; /* Full height */
+  flex-direction: row;
+  height: auto; /* Let it expand based on content */
+  min-height: calc(100vh - 60px); /* Adjust for footer height if known */
   width: 100%; /* Full width */
   margin: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -151,4 +153,21 @@ button.mat-raised-button:hover {
     box-shadow: none;
     padding: 20px;
   }
+}
+
+/* Footer stays at the bottom */
+body, html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
