@@ -13,9 +13,7 @@ namespace FavoriteService.Models
             _database = client.GetDatabase(settings.Value.DatabaseName);
         }
 
-        // Access to Music collection
-        public IMongoCollection<Book> BookCollection =>
-            _database.GetCollection<Book>(nameof(Book));
+        
 
         // Access to UserFavorites collection
         public IMongoCollection<Favorite> BookFavoritesCollection =>

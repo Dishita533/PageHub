@@ -12,76 +12,54 @@ namespace FavoriteService.Business
             _context = context;
         }
 
-        public async Task<List<Book>> GetAllBookAsync()
+        public Favorite AddFavorite(Favorite favorite)
         {
-            return await _context.BookCollection.Find(m => true).ToListAsync();
+            // Check if the book is already in the user's favorite list
+            var existingFavorite = _context.BookFavoritesCollection
+                .Find(fav => fav.UserEmail == favorite.UserEmail && fav.Id == favorite.Id)
+                .FirstOrDefault();
+
+            if (existingFavorite != null)
+            {
+                throw new Exception("This book is already in the user's favorites.");
+            }
+
+            // Insert the new favorite book
+            _context.BookFavoritesCollection.InsertOne(favorite);
+
+            return favorite;
         }
 
-        public async Task<Book> AddToFavoritesAsync(string userEmail, Book book)
+
+        public Favorite DeleteFavorite(string userEmail, int id)
         {
-            // Find the user's favorites
-            var userFavorites = await _context.BookFavoritesCollection
+            // Find and delete the favorite
+            var result = _context.BookFavoritesCollection
+                .FindOneAndDelete(fav => fav.UserEmail == userEmail && fav.Id == id);
+
+            if (result == null)
+            {
+                throw new UserNotFoundException("The specified favorite book was not found for the user.");
+            }
+
+            return result;
+        }
+
+
+        public Favorite GetFavorite(string userEmail)
+        {
+            var favorite = _context.BookFavoritesCollection
                 .Find(fav => fav.UserEmail == userEmail)
-                .FirstOrDefaultAsync();
+                .FirstOrDefault();
 
-            if (userFavorites == null)
+            if (favorite == null)
             {
-                // If no favorites exist for the user, create a new one
-                userFavorites = new Favorite
-                {
-                    UserEmail = userEmail,
-                    FavoriteBook = new List<Book> { book }
-                };
-                await _context.BookFavoritesCollection.InsertOneAsync(userFavorites);
-            }
-            else
-            {
-                // Check if the song already exists in the user's favorites
-                bool bookExists = userFavorites.FavoriteBook.Any(m => m.Id == book.Id);
-
-                if (bookExists)
-                {
-                    throw new InvalidOperationException("This song is already in your favorites.");
-                }
-
-                // Add the song to the favorites
-                userFavorites.FavoriteBook.Add(book);
-                await _context.BookFavoritesCollection.ReplaceOneAsync(fav => fav.UserEmail == userEmail, userFavorites);
+                throw new UserNotFoundException("No favorite books found for this user.");
             }
 
-            return book;
+            return favorite;
         }
 
-        public async Task<List<Book>> GetUserFavoritesAsync(string userEmail)
-        {
-            var userFavorites = await _context.BookFavoritesCollection.Find(fav => fav.UserEmail == userEmail).FirstOrDefaultAsync();
-
-            if (userFavorites == null)
-            {
-                throw new UserNotFoundException($"User with Email {userEmail} not found.");
-            }
-
-            return userFavorites.FavoriteBook;
-        }
-
-        public async Task RemoveBookAsync(string userEmail, int id)
-        {
-            var userFavorites = await _context.BookFavoritesCollection.Find(fav => fav.UserEmail == userEmail).FirstOrDefaultAsync();
-
-            if (userFavorites == null)
-            {
-                throw new UserNotFoundException($"User with Email {userEmail} not found.");
-            }
-
-            var bookToRemove = userFavorites.FavoriteBook.FirstOrDefault(m => m.Id == id);
-            if (bookToRemove == null)
-            {
-                throw new BookNotFoundException($"Music with ID {id} not found in the user's favorites.");
-            }
-
-            userFavorites.FavoriteBook.RemoveAll(m => m.Id == id);
-            await _context.BookFavoritesCollection.ReplaceOneAsync(fav => fav.UserEmail == userEmail, userFavorites);
-        }
     }
 }
 

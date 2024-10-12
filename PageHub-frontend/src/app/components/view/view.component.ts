@@ -12,6 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router } from '@angular/router';
 import { Book } from '../../models/book.model';
 import { BookService } from '../../services/book.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-view',
@@ -39,7 +40,8 @@ export class ViewComponent implements OnInit {
   totalBooks: number = 0;
   currentPage: number = 0;
   email:any;
-  constructor(private bookService: BookService, private router: Router) {}
+  isLoggedIn:boolean = false;
+  constructor(private bookService: BookService,private snackBar: MatSnackBar, private router: Router) {}
 
   ngOnInit(): void {
     this.fetchBooks();
@@ -68,19 +70,35 @@ export class ViewComponent implements OnInit {
   // toggleFavorite(book: Book): void {
   //   book.isFavorite = !book.isFavorite;
   // }
-  toggleFavorite(book: Book): void {
-    if (book.isFavorite) {
-      // If the book is already a favorite, remove it
-      this.bookService.removeFavorite(book);
-    } else {
-      // If the book is not a favorite, add it to favorites
-      this.bookService.addFavorite(book);
+  // 
+  toggleFavorite(book: any) {
+    // Check if the user is logged in
+    if (!this.isLoggedIn) {
+      this.snackBar.open('You need to log in to add books to favorites!', 'Close', {
+        duration: 3000, // Message duration in milliseconds
+        panelClass: ['error-snackbar'] // Custom CSS class for styling
+      });
+      return; // Stop further execution if not logged in
     }
-    // Toggle the favorite status
-    book.isFavorite = !book.isFavorite;
-  }
 
-  onSearchChange(): void {
+    // Logic to toggle favorite
+    book.isFavorite = !book.isFavorite;
+
+    if (book.isFavorite) {
+      // Additional logic for adding to favorites
+      this.snackBar.open('Added to Favorites!', 'Close', {
+        duration: 3000,
+        panelClass: ['success-snackbar']
+      });
+    } else {
+      // Additional logic for removing from favorites
+      this.snackBar.open('Removed from Favorites!', 'Close', {
+        duration: 3000,
+        panelClass: ['info-snackbar']
+      });
+    }
+  }
+    onSearchChange(): void {
     this.currentPage = 0;
     this.applyFilterAndPagination();
   }

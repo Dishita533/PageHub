@@ -5,6 +5,7 @@ import { Book } from '../models/book.model';
 import { login } from '../models/login.model';
 import { User } from '../interfaces/auth';
 import { AuthService } from './auth.service';
+import { Favorite } from '../models/Favorite.model';
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +14,10 @@ export class BookService {
   
 
   // private apiUrl = 'http://localhost:3000/books'; // Fake API URL
- // private apiUrl = 'http://localhost:5033/api/Book/GetAllBooks';
-  private apiUrl='http://localhost:5022/GetAllBooks';
-  private apiUrl1='http://localhost:5022/AddFavorites/{UserEmail}';
-  private apiUrl2='http://localhost:5022/RemoveFavorites/{UserEmail}';
+ private BookUrl = 'http://localhost:5022/GetAllBooks';
+  // private apiUrl='http://localhost:5210/api/Favorite/favorites';
+  private apiUrl1='http://localhost:5210/api/Favorite/favorites/add';
+  private apiUrl2='http://localhost:5210/api/Favorite/favorites/remove';
   private favoriteBooks: Book[] = []; // To store favorite books
   private loginBook :User[] =[];
   private favoriteBooksSubject = new BehaviorSubject<Book[]>([]);
@@ -24,7 +25,7 @@ export class BookService {
 
   // Fetch all books from the API
   getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.apiUrl);
+    return this.http.get<Book[]>(this.BookUrl);
   }
 
  // Add a book to the favorites list
@@ -35,11 +36,12 @@ updateFavoritesList(): void {
 }
 
  // Add a book to the favorites list
- addFavorite(book: Book): void {
+ addFavorite(book: Book):void {
   if (!this.favoriteBooks.some(b => b.title === book.title)) {
     this.favoriteBooks.push(book);
     book.isFavorite = true; // Mark as favorite
   }
+  // return this.http.post(this.apiUrl1,favorite);
 }
 
 // Remove a book from the favorites list

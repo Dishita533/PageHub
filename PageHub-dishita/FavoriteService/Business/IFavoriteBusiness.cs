@@ -3,10 +3,9 @@
 namespace FavoriteService.Business
 {
     public interface IFavoriteBusiness
-    {
-        Task<List<Book>> GetAllBookAsync();
-        Task<Book> AddToFavoritesAsync(string userEmail, Book book);
-        Task<List<Book>> GetUserFavoritesAsync(string userEmail);
-        Task RemoveBookAsync(string userEmail, int id);
+    { 
+    public Favorite AddFavorite(Favorite favorite);
+        public Favorite DeleteFavorite(string UserEmail, int Id);
+        public Favorite GetFavorite(string UserEmail);
     }
 }
