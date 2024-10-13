@@ -16,7 +16,8 @@ export class BookService {
   // private apiUrl = 'http://localhost:3000/books'; // Fake API URL
  private BookUrl = 'http://localhost:5022/GetAllBooks';
   // private apiUrl='http://localhost:5210/api/Favorite/favorites';
-  private apiUrl1='http://localhost:5210/api/Favorite/favorites/add';
+  private apiUrl1='http://localhost:5210/api/Favorite/favorites/add/';
+  private url='http://localhost:5022/AddFavorites/{UserEmail}'
   private apiUrl2='http://localhost:5210/api/Favorite/favorites/remove';
   private favoriteBooks: Book[] = []; // To store favorite books
   private loginBook :User[] =[];
@@ -36,21 +37,31 @@ updateFavoritesList(): void {
 }
 
  // Add a book to the favorites list
- addFavorite(book: Book):void {
-  if (!this.favoriteBooks.some(b => b.title === book.title)) {
-    this.favoriteBooks.push(book);
-    book.isFavorite = true; // Mark as favorite
-  }
-  // return this.http.post(this.apiUrl1,favorite);
+ 
+addtoFavorite(book: Favorite) {
+  const token = sessionStorage.getItem('token');
+    
+  // Add the Bearer token to the headers
+  const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  return this.http.post(`http://localhost:5022/AddFavorites/${book.UserEmail}`,book);
+   //return this.http.post(this.apiUrl1,book);
+}
+getAllFavorite(email:any){
+  ///RemoveFavorites/{UserEmail GetFavorites
+  return this.http.get<Favorite[]>(`http://localhost:5022/GetFavorites/${email}`);
+  //return this.http.get<Favorite[]>(`http://localhost:5210/api/Favorite/favorites/${email}`);
 }
 
+
 // Remove a book from the favorites list
-removeFavorite(book: Book): void {
-  const index = this.favoriteBooks.findIndex(b => b.title === book.title);
-  if (index !== -1) {
-    this.favoriteBooks.splice(index, 1);
-    book.isFavorite = false; // Unmark as favorite
-  }
+
+removefromFavorite(id:number,email:any){
+  const token = sessionStorage.getItem('token');
+    
+  // Add the Bearer token to the headers
+  const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  return this.http.delete(`http://localhost:5022/RemoveFavorites/${email}/${id}`,{headers});
+ // return this.http.delete(`http://localhost:5210/api/Favorite/favorites/remove/${email}/${id}`,{headers});
 }
 
 

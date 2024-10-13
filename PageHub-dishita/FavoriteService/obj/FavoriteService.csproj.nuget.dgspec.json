@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj": {}
+    "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj": {
+    "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj",
+        "projectUniqueName": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj",
         "projectName": "FavoriteService",
-        "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj",
-        "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\FavoriteService\\obj\\",
+        "projectPath": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\FavoriteService\\FavoriteService.csproj",
+        "packagesPath": "C:\\Users\\kasab\\.nuget\\packages\\",
+        "outputPath": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\FavoriteService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kasab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

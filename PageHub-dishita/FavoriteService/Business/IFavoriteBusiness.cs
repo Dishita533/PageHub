@@ -6,6 +6,6 @@ namespace FavoriteService.Business
     { 
     public Favorite AddFavorite(Favorite favorite);
         public Favorite DeleteFavorite(string UserEmail, int Id);
-        public Favorite GetFavorite(string UserEmail);
+        public List<Favorite> GetFavorite(string UserEmail);
     }
 }

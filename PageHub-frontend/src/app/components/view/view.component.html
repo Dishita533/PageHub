@@ -29,7 +29,7 @@
           <p><strong>Type:</strong> {{ book.bookType }}</p>
           <!-- Add the toggle favorite button here -->
           <button mat-button [ngClass]="book.isFavorite ? 'favorited-button' : 'favorite-button'"
-            (click)="toggleFavorite(book)">
+            (click)="addtoFav(book)">
             <mat-icon>{{ book.isFavorite ? 'favorite' : 'favorite_border' }}</mat-icon>
             {{ book.isFavorite ? 'Remove from Favorites' : 'Add to Favorites' }}
           </button>

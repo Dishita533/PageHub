@@ -17,29 +17,42 @@ import { Favorite } from '../../models/Favorite.model';
   styleUrls: ['./favorite.component.css'],
 })
 export class FavoriteComponent implements OnInit {
-  favoriteBooks: Book[] = [];
+  book: Favorite[]=[];
 
   constructor(private bookService: BookService, private router: Router) {}
 
   ngOnInit(): void {
-    this.fetchFavoriteBooks();
+    this.getFavorites()
   }
-
-  fetchFavoriteBooks(): void {
-    // Fetch only the books marked as favorite
-    this.favoriteBooks = this.bookService.getFavoriteBooks();
-    console.log(this.favoriteBooks);
-  }
-  toggleFavorite(book: Book): void {
-    if (book.isFavorite) {
-      this.bookService.removeFavorite(book);
-    } else {
-      this.bookService.addFavorite(book);
+  getFavorites(){
+   let  email= localStorage.getItem('email')||null
+   this.bookService.getAllFavorite(email).subscribe(
+    data=>{
+      this.book=data
+      console.log(this.book)
+      console.log(data)
     }
-    book.isFavorite = !book.isFavorite;
-    this.fetchFavoriteBooks(); // Refresh the list to remove the book if it is unfavorited
+   )
   }
-
+  
+  
+  // toggleFavorite(book: Favorite): void {
+  //   if (book.isFavorite) {
+  //     this.bookService.removefromFavorite(book.id=0,book.UserEmail);
+  //   } else {
+  //     this.bookService.addtoFavorite(book);
+  //   }
+  //   book.isFavorite = !book.isFavorite;
+  //   this.fetchFavoriteBooks(); // Refresh the list to remove the book if it is unfavorited
+  // }
+  removeFavorite(id:any){
+    let  email= localStorage.getItem('email')||null
+    this.bookService.removefromFavorite(id,email).subscribe(
+      data=>{
+        console.log(data)
+      }
+    )
+  }
   goToView(): void {
     this.router.navigate(['/view']);
   }

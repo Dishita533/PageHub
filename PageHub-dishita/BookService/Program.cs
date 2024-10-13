@@ -20,11 +20,23 @@ namespace BookService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<BookDbcontext>(options =>
+            builder.Services.AddDbContext<BookDbcontext>(options=>
+            {
+                var conString = builder.Configuration.GetConnectionString("conStr");
+                options.UseSqlServer(conString, sqlOptions =>
+                {
+                    sqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 5, // Number of retry attempts
+                        maxRetryDelay: TimeSpan.FromSeconds(10), // Delay between retries
+                        errorNumbersToAdd: null // Optional: specify SQL error numbers to treat as transient
+                    );
+                });
+            });
+           /* builder.Services.AddDbContext<BookDbcontext>(options =>
             {
                 var conStr = builder.Configuration.GetConnectionString("conStr");
                 options.UseSqlServer(conStr);
-            });
+            });*/
             builder.Services.AddScoped<IBookDataAccess, BookDataAccess>();
             builder.Services.AddScoped<IBookRepository, BookRepository>();
             builder.Services.AddScoped<IBookBusiness, BookBusiness>();

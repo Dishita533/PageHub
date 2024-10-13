@@ -122,9 +122,9 @@
       "UpstreamPathTemplate": "/AddFavorites/{UserEmail}",
       "UpstreamHttpMethod": [ "GET", "POST" ]
       //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "JwtBearer",
-      //  "AllowedScopes": []
-      //}
+       // "AuthenticationProviderKey": "JwtBearer",
+     //  "AllowedScopes": []
+     // }
     },
     {
 
@@ -139,11 +139,11 @@
       ],
 
       "UpstreamPathTemplate": "/RemoveFavorites/{UserEmail}",
-      "UpstreamHttpMethod": [ "GET", "DELETE" ]
-      //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "JwtBearer",
-      //  "AllowedScopes": []
-      //}
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      }
     },
     {
 
@@ -159,11 +159,11 @@
       ],
 
       "UpstreamPathTemplate": "/GetFavorites/{UserEmail}",
-      "UpstreamHttpMethod": [ "GET" ]
-      //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "JwtBearer",
-      //  "AllowedScopes": []
-      //}
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      }
     },
     {
       "UseServiceDiscovery": true,

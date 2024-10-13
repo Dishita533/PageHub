@@ -62,8 +62,8 @@ export class LoginComponent {
   login() {
     if (this.loginForm.valid) {
         this.logindata= {
-          email: this.loginForm.get("email")?.value || '', // Fallback to empty string if null
-          password: this.loginForm.get("password")?.value || ''
+          "email": this.loginForm.get('email')?.value?.toString()||'',// Fallback to empty string if null
+          "password": this.loginForm.get('password')?.value||''
           //"email":this.loginForm.get("email")?.value
         //"email": this.loginForm.value.email,
         //"password": this.loginForm.value.password
@@ -77,7 +77,8 @@ export class LoginComponent {
           if (data && data.token) {
             sessionStorage.setItem('token', data.token); // Store token for authenticated sessions
             localStorage.setItem('token', data.token);
-            localStorage.setItem('email', this.email+'')
+            localStorage.setItem('email', this.logindata.email)
+            console.log(this.logindata.email)
             this._snackBar.open('Login successful!', 'Close', {
               duration: 2000,
             });

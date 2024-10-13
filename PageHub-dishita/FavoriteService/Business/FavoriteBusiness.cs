@@ -46,18 +46,19 @@ namespace FavoriteService.Business
         }
 
 
-        public Favorite GetFavorite(string userEmail)
-        {
-            var favorite = _context.BookFavoritesCollection
-                .Find(fav => fav.UserEmail == userEmail)
-                .FirstOrDefault();
 
-            if (favorite == null)
+        public List<Favorite> GetFavorite(string userEmail)
+        {
+            List<Favorite> favorites = _context.BookFavoritesCollection
+                .Find(fav => fav.UserEmail == userEmail).ToList(); // Get all favorites for the user
+            Console.WriteLine($"Number of favorites found: {favorites.Count}");
+
+            if (favorites == null || !favorites.Any())
             {
                 throw new UserNotFoundException("No favorite books found for this user.");
             }
 
-            return favorite;
+            return favorites; // Return the list of favorites
         }
 
     }

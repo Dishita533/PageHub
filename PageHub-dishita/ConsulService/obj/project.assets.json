@@ -573,19 +573,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\": {}
+    "C:\\Users\\kasab\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\ConsulService.csproj",
+      "projectUniqueName": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\ConsulService\\ConsulService.csproj",
       "projectName": "ConsulService",
-      "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\ConsulService.csproj",
-      "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\ConsulService\\obj\\",
+      "projectPath": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\ConsulService\\ConsulService.csproj",
+      "packagesPath": "C:\\Users\\kasab\\.nuget\\packages\\",
+      "outputPath": "D:\\Page-Hub-updated\\PageHub\\PageHub-dishita\\ConsulService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kasab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

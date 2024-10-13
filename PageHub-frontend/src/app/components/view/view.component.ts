@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 import { Book } from '../../models/book.model';
 import { BookService } from '../../services/book.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Favorite } from '../../models/Favorite.model';
 
 @Component({
   selector: 'app-view',
@@ -36,6 +37,7 @@ export class ViewComponent implements OnInit {
   books: Book[] = [];
   filteredBooks: Book[] = [];
   searchGenre: string = '';
+  fav : Favorite = new Favorite();
   pageSize: number = 10;
   totalBooks: number = 0;
   currentPage: number = 0;
@@ -71,6 +73,26 @@ export class ViewComponent implements OnInit {
   //   book.isFavorite = !book.isFavorite;
   // }
   // 
+  addtoFav(book:Book){
+    this.fav.UserEmail=localStorage.getItem('email')||'';
+    this.fav.author=book.author
+    this.fav.bookType=book.bookType
+    this.fav.genre=book.genre
+    this.fav.id=book.id
+    this.fav.FavId=''
+    this.fav.imageUrl=book.imageUrl
+    this.fav.description=book.description
+    this.fav.title=book.title
+    this.fav.isFavorite=book.isFavorite
+    this.bookService.addtoFavorite(this.fav).subscribe(
+      data=>
+      {
+        this.fav=data
+        console.log(this.fav)
+      }
+    )
+    
+  }
   toggleFavorite(book: any) {
     // Check if the user is logged in
     if (!this.isLoggedIn) {

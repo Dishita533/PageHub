@@ -4,9 +4,11 @@ using FavoriteService.Business;
 using FavoriteService.Models;
 using FavoriteService.Exceptions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FavoriteService.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class FavoriteController : ControllerBase
@@ -38,6 +40,7 @@ namespace FavoriteService.Controllers
         }
 
         // Add a book to the user's favorites
+        
         [HttpPost("favorites/add")]
         public IActionResult AddToFavorites([FromBody] Favorite favorite)
         {
@@ -57,6 +60,7 @@ namespace FavoriteService.Controllers
         }
 
         // Remove a book from the user's favorites
+        
         [HttpDelete("favorites/remove/{userEmail}/{id}")]
         public IActionResult RemoveFromFavorites(string userEmail, int id)
         {
