@@ -13,11 +13,11 @@ import { Favorite } from '../models/Favorite.model';
 export class BookService {
   
 
-  // private apiUrl = 'http://localhost:3000/books'; // Fake API URL
- private BookUrl = 'http://localhost:5022/GetAllBooks';
+  private apiUrl = 'http://localhost:3000/books'; // Fake API URL
+ //private BookUrl = 'http://localhost:5022/GetAllBooks';
   // private apiUrl='http://localhost:5210/api/Favorite/favorites';
-  private apiUrl1='http://localhost:5210/api/Favorite/favorites/add';
-  private apiUrl2='http://localhost:5210/api/Favorite/favorites/remove';
+ // private apiUrl1='http://localhost:5210/api/Favorite/favorites/add';
+  //private apiUrl2='http://localhost:5210/api/Favorite/favorites/remove';
   private favoriteBooks: Book[] = []; // To store favorite books
   private loginBook :User[] =[];
   private favoriteBooksSubject = new BehaviorSubject<Book[]>([]);
@@ -25,7 +25,7 @@ export class BookService {
 
   // Fetch all books from the API
   getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.BookUrl);
+    return this.http.get<Book[]>(this.apiUrl);
   }
 
  // Add a book to the favorites list

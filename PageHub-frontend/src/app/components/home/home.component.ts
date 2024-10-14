@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgIf } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -18,5 +19,10 @@ import { MatCardModule } from '@angular/material/card';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
+
+  goToGenre(genre: string) {
+    this.router.navigate(['/genre', genre]);
+  }
 
 }

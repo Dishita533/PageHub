@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';  // <-- Added ActivatedRoute import
 import { Book } from '../../models/book.model';
 import { BookService } from '../../services/book.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -35,17 +35,28 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class ViewComponent implements OnInit {
   books: Book[] = [];
   filteredBooks: Book[] = [];
-  searchGenre: string = '';
+  searchGenre: string = '';  // To store search term or route param
   pageSize: number = 10;
   totalBooks: number = 0;
   currentPage: number = 0;
-  email:any;
   isLoggedIn:boolean = false;
-  constructor(private bookService: BookService,private snackBar: MatSnackBar, private router: Router) {}
+
+  constructor(
+    private bookService: BookService, 
+    private router: Router, 
+    private snackBar: MatSnackBar,
+    private route: ActivatedRoute  // <-- Added ActivatedRoute in constructor
+  ) {}
 
   ngOnInit(): void {
-    this.fetchBooks();
-    this.email = localStorage.getItem('email');
+    // Fetch the genre from the route parameters if provided
+    this.route.paramMap.subscribe(params => {
+      const genreFromRoute = params.get('genreName');
+      if (genreFromRoute) {
+        this.searchGenre = genreFromRoute;  // Set the search genre based on route param
+      }
+      this.fetchBooks();  // Fetch and filter the books based on genre
+    });
   }
 
   fetchBooks(): void {
@@ -59,7 +70,7 @@ export class ViewComponent implements OnInit {
         });
 
         this.totalBooks = this.books.length;
-        this.applyFilterAndPagination();
+        this.applyFilterAndPagination();  // Apply filter and pagination
       },
       (error) => {
         console.error('Error fetching books:', error);
@@ -68,9 +79,21 @@ export class ViewComponent implements OnInit {
   }
 
   // toggleFavorite(book: Book): void {
+  //   if (book.isFavorite) {
+  //     // Remove the second argument 'userEmail'
+  //     this.bookService.removeFavorite(book);
+  //   } else {
+  //     // Remove the second argument 'userEmail'
+  //     this.bookService.addFavorite(book);
+  //   }
+    
+  //   // Toggle the favorite status
   //   book.isFavorite = !book.isFavorite;
+  
+  //   // Update the list of favorites in the FavoritesComponent
+  //   this.bookService.updateFavoritesList();
   // }
-  // 
+  
   toggleFavorite(book: any) {
     // Check if the user is logged in
     if (!this.isLoggedIn) {
@@ -98,7 +121,8 @@ export class ViewComponent implements OnInit {
       });
     }
   }
-    onSearchChange(): void {
+
+  onSearchChange(): void {
     this.currentPage = 0;
     this.applyFilterAndPagination();
   }
@@ -114,23 +138,12 @@ export class ViewComponent implements OnInit {
     this.applyFilterAndPagination();
   }
 
-  // applyFilterAndPagination(): void {
-  //   let filtered = this.books;
-  //   if (this.searchGenre) {
-  //     filtered = this.books.filter(book =>
-  //       book.genre.toLowerCase().includes(this.searchGenre.toLowerCase())
-  //     );
-  //   }
-  //   this.totalBooks = filtered.length;
-  //   const startIndex = this.currentPage * this.pageSize;
-  //   this.filteredBooks = filtered.slice(startIndex, startIndex + this.pageSize);
-  // }
   applyFilterAndPagination(): void {
     let filtered = this.books;
-  
+
     if (this.searchGenre) {
       const searchValue = this.searchGenre.toLowerCase();
-  
+
       filtered = this.books.filter(book =>
         book.genre.toLowerCase().includes(searchValue) ||  // Search by genre
         book.title.toLowerCase().includes(searchValue) ||  // Search by title (book name)
@@ -138,14 +151,13 @@ export class ViewComponent implements OnInit {
         book.bookType.toLowerCase().includes(searchValue)  // Search by type (fiction/non-fiction)
       );
     }
-  
+
     this.totalBooks = filtered.length;
     const startIndex = this.currentPage * this.pageSize;
     this.filteredBooks = filtered.slice(startIndex, startIndex + this.pageSize);
   }
-  
+
   goToFavorite(): void {
     this.router.navigate(['/favorite']);
   }
-
 }

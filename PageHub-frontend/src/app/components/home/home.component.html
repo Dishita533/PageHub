@@ -13,15 +13,15 @@
   <h1>Genre</h1>
   <!-- New Image Card Section -->
   <div class="image-gallery">
-    <mat-card class="gallery-card">
-      <img mat-card-image src="../../../assets/images/Thriller.jpeg" alt="Thriller" class="fixed-image" />
+    <mat-card class="gallery-card" (click)="goToGenre('Science')">
+      <img mat-card-image src="../../../assets/images/Thriller.jpeg" alt="Science" class="fixed-image" />
       <mat-card-content>
-        <h2 mat-card-title>Thriller</h2>
+        <h2 mat-card-title>Science</h2>
         <!-- <p mat-card-subtitle>Short description for Image 1.</p> -->
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="gallery-card">
+    <mat-card class="gallery-card" (click)="goToGenre('Fantasy')">
       <img mat-card-image src="../../../assets/images/Fantasy.jpeg" alt="Fantasy" class="fixed-image" />
       <mat-card-content>
         <h2 mat-card-title>Fantasy</h2>
@@ -29,13 +29,33 @@
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="gallery-card">
-      <img mat-card-image src="../../../assets/images/Comedy.jpeg" alt="Comedy" class="fixed-image"/>
+    <mat-card class="gallery-card" (click)="goToGenre('Pets')">
+      <img mat-card-image src="../../../assets/images/Comedy.jpeg" alt="Pets" class="fixed-image"/>
       <mat-card-content>
-        <h2 mat-card-title>Comedy</h2>
+        <h2 mat-card-title>Pets</h2>
         <!-- <p mat-card-subtitle>Short description for Image 3.</p> -->
       </mat-card-content>
     </mat-card>
+    <mat-card class="gallery-card" (click)="goToGenre('Sports')">
+      <img mat-card-image src="../../../assets/images/Drama.jpg" alt="Sports" class="fixed-image" />
+      <mat-card-content>
+        <h2 mat-card-title>Sports</h2>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="gallery-card" (click)="goToGenre('Mystery')">
+      <img mat-card-image src="../../../assets/images/Horror.jpeg" alt="Mystery" class="fixed-image" />
+      <mat-card-content>
+        <h2 mat-card-title>Mystery</h2>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="gallery-card" (click)="goToGenre('Literature')">
+      <img mat-card-image src="../../../assets/images/Sci-Fi.jpeg" alt="Literature" class="fixed-image" />
+      <mat-card-content>
+        <h2 mat-card-title>Literature</h2>
+      </mat-card-content>
+     </mat-card>
   </div>
    <h1>Your Guide to Reading Happiness.</h1>
     <p class="minicontent">

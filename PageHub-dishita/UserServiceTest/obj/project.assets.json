@@ -4057,19 +4057,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\": {}
+    "C:\\Users\\chinni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserServiceTest\\UserServiceTest.csproj",
+      "projectUniqueName": "D:\\Pagehub\\PageHub\\PageHub-dishita\\UserServiceTest\\UserServiceTest.csproj",
       "projectName": "UserServiceTest",
-      "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserServiceTest\\UserServiceTest.csproj",
-      "packagesPath": "C:\\Users\\C02-labuser0069373\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserServiceTest\\obj\\",
+      "projectPath": "D:\\Pagehub\\PageHub\\PageHub-dishita\\UserServiceTest\\UserServiceTest.csproj",
+      "packagesPath": "C:\\Users\\chinni\\.nuget\\packages\\",
+      "outputPath": "D:\\Pagehub\\PageHub\\PageHub-dishita\\UserServiceTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\C02-labuser0069373\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chinni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4084,8 +4084,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
-              "projectPath": "C:\\Users\\C02-labuser0069373\\Downloads\\PageHub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj"
+            "D:\\Pagehub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj": {
+              "projectPath": "D:\\Pagehub\\PageHub\\PageHub-dishita\\UserService\\UserService.csproj"
             }
           }
         }

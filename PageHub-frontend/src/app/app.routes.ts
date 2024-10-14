@@ -24,6 +24,7 @@ const routes: Routes = [
     
   },
   { path: 'view', component: ViewComponent },
+  { path: 'genre/:genreName', component: ViewComponent },
   { path: 'favorite', component: FavoriteComponent,canActivate: [authGuard] },
   {
     path: '', redirectTo: 'Home', pathMatch: 'full'
