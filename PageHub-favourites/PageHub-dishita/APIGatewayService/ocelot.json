@@ -1,0 +1,196 @@
+{
+
+  "Routes": [
+    {
+      //localhost:5075/api/Books/Register
+      "DownstreamPathTemplate": "/api/Books/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ],
+
+      "UpstreamPathTemplate": "/bookregistration",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+
+
+    },
+    {
+      //localhost:5075/api/Books/Login
+      "DownstreamPathTemplate": "/api/Books/Login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ],
+
+      "UpstreamPathTemplate": "/BookLogin",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+    {
+      //localhost:5075/api/Books/GetUserByEmail/{email}
+      "DownstreamPathTemplate": "/api/Books/GetUserByEmail/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5075
+        }
+      ],
+
+      "UpstreamPathTemplate": "/GetUserByEmail/{email}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      }
+
+    },
+    {
+      //localhost:5033/api/Book/AddBook
+      "DownstreamPathTemplate": "/api/Book/AddBook",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5033
+        }
+      ],
+
+      "UpstreamPathTemplate": "/AddBook",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      }
+
+    },
+    {
+      //localhost:5033/api/Book/GetAllBooks
+      "DownstreamPathTemplate": "/api/Book/GetAllBooks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5033
+        }
+      ],
+
+      "UpstreamPathTemplate": "/GetAllBooks",
+      "UpstreamHttpMethod": [ "GET" ]
+      //"AuthenticationOptions": {
+      //"AuthenticationProviderKey": "JwtBearer",
+      //"AllowedScopes": []
+      //}
+
+    },
+    {
+      //localhost:5033/api/Book/GetBookbyGenre/Animals%2C%20Bugs%20%26%20Pets
+      "DownstreamPathTemplate": "/api/Book/GetBookbyGenre/{Genre}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5033
+        }
+      ],
+
+      "UpstreamPathTemplate": "/GetBookbyGenre/{Genre}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      }
+
+    },
+    {
+      //localhost:5210/api/Favorite/favorites/add/dishita%40gmail.com    
+      "DownstreamPathTemplate": "/api/Favorite/favorites/add/{UserEmail}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5210
+        }
+      ],
+
+      "UpstreamPathTemplate": "/AddFavorites/{UserEmail}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "JwtBearer",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+
+      //localhost:5210/api/Favorite/favorites/remove/dishita%40gmail.com/0   
+      "DownstreamPathTemplate": "/api/Favorite/favorites/remove/{UserEmail}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5210
+        }
+      ],
+
+      "UpstreamPathTemplate": "/RemoveFavorites/{UserEmail}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "JwtBearer",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+
+
+      //localhost:5210/api/Favorite/favorites/dishita%40gmail.com   
+      "DownstreamPathTemplate": "/api/Favorite/favorites/{UserEmail}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5210
+        }
+      ],
+
+      "UpstreamPathTemplate": "/GetFavorites/{UserEmail}",
+      "UpstreamHttpMethod": [ "GET" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "JwtBearer",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "RouteIsCaseSensitive": false,
+      "UpstreamPathTemplate": "/api/weather",
+      "UpstreamHttpMethod": [ "Get" ],
+      "ServiceName": "SampleAPI",
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      },
+      "ReRoutesCaseSensitive": false
+    }
+  
+
+
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul",
+      "PollingInterval": 1000
+      //"ConfigurationKey": "Ocelot_A"
+    }
+  }
+
+}

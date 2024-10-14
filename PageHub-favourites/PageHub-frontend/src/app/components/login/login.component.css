@@ -1,0 +1,173 @@
+/* Main container for the login page */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  height: auto; /* Let it expand based on content */
+  min-height: calc(100vh - 60px); /* Adjust for footer height if known */
+  width: 100%; /* Full width */
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left side with the image */
+.left-side {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 1%; 
+  overflow: hidden;
+}
+
+.left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text overlay on the left image */
+.overlay-text {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  color: white;
+  max-width: 300px;
+  background: cadetblue;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.overlay-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Right side with the form */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+}
+
+/* Form card styling */
+.login-card {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(207, 8, 8, 0.15);
+  padding: 20px;
+  background-color: rgba(9, 47, 55, 0.1);
+  text-align: center;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Form input field styling */
+mat-form-field {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.mat-error {
+  font-size: 12px;
+  color: red;
+}
+
+/* Login button styling */
+button.mat-raised-button {
+  background-color: #6200ea;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.mat-raised-button:hover {
+  background-color: #3700b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Register link styling */
+.mt-2 {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #6b7280;
+}
+
+.mt-2 a {
+  color: darkblue;
+  text-decoration: bold;
+}
+
+.mt-2 a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .login-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-card {
+    box-shadow: none;
+    padding: 20px;
+  }
+}
+
+/* Footer stays at the bottom */
+body, html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

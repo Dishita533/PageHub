@@ -1,0 +1,153 @@
+.main {
+  background-image: url('https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?auto=compress&cs=tinysrgb&w=400');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Allura", cursive;
+  font-size: 40px;
+  background-color: rgb(177, 168, 168);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-button {
+  margin-top: 20px;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+/* Controls container for pagination and search */
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.search-field {
+  width: 300px;
+  max-width: 100%;
+}
+
+mat-paginator {
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-button {
+  background-color: #303f9f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.favorite-button:hover {
+  background-color: red;
+}
+
+.favorited-button {
+  background-color: red;
+  color: white;
+}
+
+.favorited-button:hover {
+  background-color: darkred;
+}
+
+/* Responsive Book Container */
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.book-image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+mat-card-title {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+mat-card-subtitle {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  color: rgba(250, 0, 0, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .book-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 30px;
+  }
+
+  .view-button {
+    width: 100%;
+  }
+
+  .book-container {
+    grid-template-columns: 1fr;
+  }
+
+  .book-image {
+    width: 100px;
+    height: 150px;
+  }
+}
