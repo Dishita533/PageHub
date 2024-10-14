@@ -5,9 +5,9 @@ namespace FavoriteService.Models
 {
     public class Favorite
     {
-        /*[BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]*/
-        /*public string FavId { get; set; }*/
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string FavId { get; set; }
         public string UserEmail { get; set; }
         public int Id { get; set; }  // Auto-generated ID for each book entry
 
